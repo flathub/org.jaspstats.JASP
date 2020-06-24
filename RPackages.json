@@ -3365,18 +3365,6 @@
 			"build-commands": [ "R CMD INSTALL ." ]
 		},
 		{
-			"name": "tidygraph",
-			"buildsystem": "simple",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "http://static.jasp-stats.org/RPkgs/tidygraph_1.1.2.tar.gz",
-					"sha256": "5642001d4cccb122d66481b7c61a06c724c02007cbd356ee61cb29726a56fafe"
-				}
-			],
-			"build-commands": [ "R CMD INSTALL ." ]
-		},
-		{
 			"name": "car",
 			"buildsystem": "simple",
 			"sources": [
