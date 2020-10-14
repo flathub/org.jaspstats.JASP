@@ -104,7 +104,7 @@
 			[
 				{
 					"type":		"git",
-					"tag":		"v0.13.1.0",
+					"tag":		"v0.14.0.0_flatpak",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				},
 				{
