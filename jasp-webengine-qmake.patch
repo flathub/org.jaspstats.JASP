@@ -1,0 +1,28 @@
+diff --git a/JASP-Desktop/JASP-Desktop.pro b/JASP-Desktop/JASP-Desktop.pro
+index f00b7becd..14822429e 100644
+--- a/JASP-Desktop/JASP-Desktop.pro
++++ b/JASP-Desktop/JASP-Desktop.pro
+@@ -1,3 +1,7 @@
++QT_MODULE_INCLUDE_BASE=/app/include
++
++include(/app/lib/mkspecs/modules/qt_lib_webenginecore.pri)
++include(/app/lib/mkspecs/modules/qt_lib_webengine.pri)
+ QT      += webengine webchannel svg network printsupport xml qml quick quickwidgets quickcontrols2
+ DEFINES += JASP_USES_QT_HERE
+ 
+diff --git a/JASP-R-Interface-Windows.pro b/JASP-R-Interface-Windows.pro
+deleted file mode 100644
+index b7b460c7b..000000000
+--- a/JASP-R-Interface-Windows.pro
++++ /dev/null
+@@ -1,10 +0,0 @@
+-cache()
+-
+-include(JASP.pri)
+-
+-TEMPLATE = subdirs
+-
+-DESTDIR = .
+-
+-SUBDIRS += \
+-        JASP-R-Interface
