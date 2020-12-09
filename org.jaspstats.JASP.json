@@ -1,10 +1,10 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":	"5.14",
+	"runtime-version":	"5.15",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":		"5.14",
+	"base-version":		"5.15",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
 		"--socket=x11",
@@ -106,7 +106,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"e446a9a3f12cd7a701361486fc837c40e73c580f",
+					"commit":	"9c2193feebae4a13437faf860cf79288f2af5746",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				},
 				{
