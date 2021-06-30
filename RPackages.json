@@ -10,7 +10,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "file:///home/dvdb/github/jaspModules/runAllUnitTests/setup_rpkg_for_flatpak/archives/flatpak_archive.tar.gz",
+					"url": "http://static.jasp-stats.org/flatpak_archive.tar.gz",
 					"sha256": "5fc6e4929d8c82a4802a9c393bdb701869e4715f69d9d42774769e880f4b61ba"
 				}
 			],
