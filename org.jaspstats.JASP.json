@@ -27,8 +27,8 @@
 			"CXX14FLAGS":	"-std=gnu++14",
 
 			"JASP_R_REPOSITORY":				"file:///app/lib64/local-cran",
-			"GITHUB_PAT_DEF":					"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",
-			"GITHUB_PAT":						"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",
+			"GITHUB_PAT_DEF":					"Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
+			"GITHUB_PAT":						"Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
 
 			"GIT_DISCOVERY_ACROSS_FILESYSTEM":	"true",
 
@@ -116,7 +116,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"b50460d091ed031f863b130dc0337cfe8442b16a",
+					"commit":	"0046fa53f209a50577f25b439be74994844f2bff",
 					"url": 		"https://github.com/vandenman/jasp-desktop"
 				}
 			]
