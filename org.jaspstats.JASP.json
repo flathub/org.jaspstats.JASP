@@ -116,8 +116,8 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"0046fa53f209a50577f25b439be74994844f2bff",
-					"url": 		"https://github.com/vandenman/jasp-desktop"
+					"commit":	"0bccaa85e45a5247be6c5400d2417f2505edad50",
+					"url": 		"https://github.com/JorisGoosen/jasp-desktop"
 				}
 			]
 		}
