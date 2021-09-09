@@ -110,7 +110,8 @@
 			"name": 		"jasp",
 			"buildsystem": 	"qmake",
 			"config-opts": [
-                "QMAKE_INCDIR+=/app/include/QtWebEngine"
+				"QMAKE_INCDIR+=/app/include/QtWebEngine",
+				"CONFIG+=debug"
 			],
 			"sources":
 			[
