@@ -1,10 +1,10 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":	"5.15",
+	"runtime-version":		"5.15",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":		"5.15",
+	"base-version":			"5.15",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
 		"--socket=x11",
@@ -96,7 +96,20 @@
 					"url":    "https://static.jasp-stats.org/RPkgs/JAGS-4.3.0.tar.gz"
 				} ]
 		},
+		{
+			"name":			"git2",
+			"buildsystem":	"cmake",
+			"builddir":		true,
+			"sources": [
+				{
+					"type":   	"git",
+					"tag": 		"v1.2.0",
+					"url":    	"https://github.com/libgit2/libgit2"
+				} ]
+		},
+
 		"RPackages.json",
+
 		{
 			"name": "readstat",
 			"sources": [
@@ -117,7 +130,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"0bccaa85e45a5247be6c5400d2417f2505edad50",
+					"commit":	"b664f4f0488506e4ecc8a435b09f1642da99589f",
 					"url": 		"https://github.com/JorisGoosen/jasp-desktop"
 				}
 			]
