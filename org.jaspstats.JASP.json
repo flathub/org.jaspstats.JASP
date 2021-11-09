@@ -130,7 +130,7 @@
 			[
 				{
 					"type":		"git",
-					"tag":		"v0.16.0.0_flatpak",
+					"commit":	"1bc1f39493dfb9657ad976d8f8d698701e478ff1",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
