@@ -130,8 +130,8 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"afd9ebd61dd02c57c07ae2b1e961583f57ed3d41",
-					"url": 		"https://github.com/vandenman/jasp-desktop"
+					"commit":	"eaae7947fc3b33e91045a7daea6da0e64eba0b64",
+					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
 		}
