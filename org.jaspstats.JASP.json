@@ -1,10 +1,10 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":		"5.15",
+	"runtime-version":		"6.2",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":			"5.15",
+	"base-version":			"6.2",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
 		"--socket=x11",
