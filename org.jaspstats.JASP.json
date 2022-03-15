@@ -135,6 +135,7 @@
 			"buildsystem": 	"qmake",
 			"config-opts": [
 				"QMAKE_INCDIR+=/app/include/QtWebEngine",
+				"QMAKE_INCDIR+=/app/include/QtCore5Compat",
 				"CONFIG+=debug"
 			],
 			"sources":
