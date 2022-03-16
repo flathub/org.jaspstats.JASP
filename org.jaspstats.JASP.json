@@ -45,7 +45,6 @@
 		{
 			"name":			"qt5compat",
 			"buildsystem":	"cmake",
-			"build-options": { "prefix":	"/usr" },
 			"sources":[
 				{
 					"type":	"git",
@@ -133,7 +132,7 @@
 		},
 		{
 			"name": 		"jasp",
-			"buildsystem": 	"qmake",
+			"buildsystem": 	"cmake",
 			"config-opts": [
 				"QMAKE_INCDIR+=/app/include/QtWebEngine",
 				"QMAKE_INCDIR+=/app/include/QtCore5Compat",
@@ -143,8 +142,8 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"a7d4928c2decd3e28bff64c333db7ec3b78eee52",
-					"url": 		"https://github.com/jasp-stats/jasp-desktop"
+					"commit":	"8341892e8687ce2d26d9737bfa9b6ce3017d2630",
+					"url": 		"https://github.com/amirmasoudabdol/jasp-desktop"
 				}
 			]
 		}
