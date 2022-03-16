@@ -45,13 +45,14 @@
 		{
 			"name":			"qt5compat",
 			"buildsystem":	"cmake",
+			"build-options": { "prefix":	"/usr" },
 			"sources":[
 				{
 					"type":	"git",
 					"tag":	"v6.2.3",
 					"url":	"https://github.com/qt/qt5compat"					
 				}
-			]
+			]	
 		},
 		{
 			"name": 		"boost",
