@@ -60,9 +60,9 @@
 			],
 			"sources":[
 				{
-					"type": 	"archive",
-					"url": 		"https://boostorg.jfrog.io/artifactory/main/release/1.71.0/source/boost_1_71_0.tar.gz",
-					"sha256": 	"96b34f7468f26a141f6020efb813f1a2f3dfb9797ecf76a7d7cbd843cc95f5bd"
+					"type": 	"git",
+					"url": 		"https://github.com/boostorg/boost",
+					"sha256": 	"boost-1.78.0"
 				}
 			]
 		},
@@ -92,7 +92,7 @@
 			"sources": [
 				{
 					"type":	"git",
-					"tag":	"v3.8.0",
+					"tag":	"v3.10.0",
 					"url": 	"https://github.com/Reference-LAPACK/lapack"
 				} ]
 		},
@@ -136,7 +136,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"5bb344acd87b9ab448258ad89969293481b83055",
+					"commit":	"8c450aa32730312094677af7dc76924abfb5428f",
 					"url": 		"https://github.com/amirmasoudabdol/jasp-desktop"
 				}
 			]
