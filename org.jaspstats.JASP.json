@@ -55,7 +55,7 @@
 			"name": 		"boost",
 			"buildsystem": 	"simple",
 			"build-commands":[
-				"./bootstrap.sh --with-libraries=filesystem,system",
+				"./bootstrap.sh --with-libraries=filesystem,system,date_time",
 				"./b2 -j${FLATPAK_BUILDER_N_JOBS} install --prefix=/app" 
 			],
 			"sources":[
