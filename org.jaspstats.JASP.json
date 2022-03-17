@@ -132,7 +132,8 @@
 		},
 		{
 			"name": 		"jasp",
-			"buildsystem": 	"cmake",
+			"buildsystem": 	"cmake-ninja",
+			"config-opts": [ "-DINSTALL_R_MODULES=ON"] ,
 			"sources":
 			[
 				{
