@@ -134,7 +134,7 @@
 			"config-opts": [ "-DINSTALL_R_MODULES=ON"] ,
 			"build-options": 
 			{
-				"prefix":	"/app;/app/lib/QtWebEngine;/app/lib/QtCore5Compat"	
+				"prefix":	"/app;/app/mkspecs/modules/"	
 			},
 			"sources":
 			[
