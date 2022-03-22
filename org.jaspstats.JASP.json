@@ -131,11 +131,12 @@
 		{
 			"name": 		"jasp",
 			"buildsystem": 	"cmake-ninja",
-			"config-opts": [ "-DINSTALL_R_MODULES=ON"] ,
-			"build-options": 
-			{
-				"prefix":	"/app;/app/mkspecs/modules/"	
-			},
+			"config-opts": 
+			[ 
+				"-DINSTALL_R_MODULES=ON",
+				"-DQt6WebEngineQuick_DIR=/app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6WebEngineQuick/Qt6WebEngineQuickConfig.cmake",
+				"-DQt6Core5Compat_DIR=/app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake"
+			] ,
 			"sources":
 			[
 				{
