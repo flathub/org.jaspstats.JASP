@@ -133,7 +133,6 @@
 		{
 			"name": 		"jasp",
 			"buildsystem": 	"cmake-ninja",
-			"secret-ops": 	[ "-DGITHUB_PAT=$GITHUB_PAT", "-DGITHUB_PAT_DEF=$GITHUB_PAT"],
 			"config-opts": 
 			[ 
 				"-DINSTALL_R_MODULES=ON",
