@@ -99,6 +99,17 @@
 				} ]
 		},
 		{
+			"name": 		"jsoncpp",
+			"buildsystem":	"cmake",
+			"builddir":		true,
+			"sources": [
+				{
+					"type":	"git",
+					"tag":	"1.9.5",
+					"url": 	"https://github.com/open-source-parsers/jsoncpp"
+				} ]
+		},
+		{
 			"name":		"JAGS",
 			"sources": [
 				{
@@ -133,6 +144,7 @@
 		{
 			"name": 		"jasp",
 			"buildsystem": 	"cmake-ninja",
+			"builddir":		true,
 			"config-opts": 
 			[ 
 				"-DINSTALL_R_MODULES=ON",
