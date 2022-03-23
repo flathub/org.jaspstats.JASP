@@ -141,8 +141,8 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"393beb256d82cf2888ebdb791ab35d1a4220505e",
-					"url": 		"https://github.com/amirmasoudabdol/jasp-desktop"
+					"commit":	"986d837263ece7a80f0c27e3a3cfe3a7a2d318b1",
+					"url": 		"https://github.com/jorisgoosen/jasp-desktop"
 				}
 			]
 		}
