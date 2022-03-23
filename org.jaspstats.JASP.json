@@ -27,6 +27,8 @@
 			"CXX14FLAGS":	"-std=gnu++14",
 
 			"JASP_R_REPOSITORY":				"file:///app/lib64/local-cran",
+			"GITHUB_PAT_DEF":					"Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
+			"GITHUB_PAT":						"Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
 
 			"GIT_DISCOVERY_ACROSS_FILESYSTEM":	"true",
 
