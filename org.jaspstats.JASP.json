@@ -136,6 +136,7 @@
 			"config-opts": 
 			[ 
 				"-DINSTALL_R_MODULES=ON",
+				"-DFLATPAK_USED=ON",
 				"-DQt6WebEngineQuick_DIR=/app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6WebEngineQuick/",
 				"-DQt6Core5Compat_DIR=/app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6Core5Compat/"
 			] ,
