@@ -117,7 +117,7 @@
 				} ]
 		},
 
-		"RPackages.json",
+
 
 		{
 			"name": "readstat",
@@ -141,7 +141,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"986d837263ece7a80f0c27e3a3cfe3a7a2d318b1",
+					"commit":	"b44f014414ecc8b715e2e257bb25e0fbf96e536c",
 					"url": 		"https://github.com/jorisgoosen/jasp-desktop"
 				}
 			]
