@@ -55,6 +55,10 @@
 			"name": 		"boost",
 			"buildsystem": 	"simple",
 			"build-commands":[
+				"echo 'what is in the cmake folder of /app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/ ?'",
+				"ls -R /app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/",
+				"echo 'and what is in /app/lib?'",
+				"ls /app/lib/",
 				"./bootstrap.sh --with-libraries=filesystem,system,date_time,chrono,timer",
 				"./b2 -j${FLATPAK_BUILDER_N_JOBS} install --prefix=/app" 
 			],
