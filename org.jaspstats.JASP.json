@@ -35,8 +35,8 @@
 			"PREFIX": 							"/app",
 			"R_HOME": 							"/app/lib64/R/",
 
-			"Qt6WebEngineQuick_DIR":		"`echo /app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6WebEngineQuick/`",
-			"Qt6Core5Compat_DIR":			"`echo /app/lib/${FLATPAK_ARCH}-linux-gnu/cmake/Qt6Core5Compat/`"
+			"Qt6WebEngineQuick_DIR":		"`echo /app/lib/x86_64-linux-gnu/cmake/Qt6WebEngineQuick/`",
+			"Qt6Core5Compat_DIR":			"`echo /app/lib/x86_64-linux-gnu/cmake/Qt6Core5Compat/`"
 		}
 	},
 	"cleanup": [
