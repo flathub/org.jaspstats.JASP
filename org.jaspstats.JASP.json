@@ -35,8 +35,8 @@
 			"PREFIX": 							"/app",
 			"R_HOME": 							"/app/lib64/R/",
 
-			"Qt6WebEngineQuick_DIR":		"`echo /app/lib/x86_64-linux-gnu/cmake/Qt6WebEngineQuick/`",
-			"Qt6Core5Compat_DIR":			"`echo /app/lib/x86_64-linux-gnu/cmake/Qt6Core5Compat/`"
+			"Qt6WebEngineQuick_DIR":		"/app/lib/x86_64-linux-gnu/cmake/Qt6WebEngineQuick/",
+			"Qt6Core5Compat_DIR":			"/app/lib/x86_64-linux-gnu/cmake/Qt6Core5Compat/"
 		}
 	},
 	"cleanup": [
@@ -156,8 +156,8 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"5529ac8230e8c6278f9c7dcb73628ec9fe85cb65",
-					"url": 		"https://github.com/amirmasoudabdol/jasp-desktop"
+					"commit":	"f89bf77101d98a718f093131052d1ca80e8942b6",
+					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
 		}
