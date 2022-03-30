@@ -33,10 +33,7 @@
 			"GIT_DISCOVERY_ACROSS_FILESYSTEM":	"true",
 
 			"PREFIX": 							"/app",
-			"R_HOME": 							"/app/lib64/R/",
-
-			"Qt6WebEngineQuick_DIR":		"/app/lib/x86_64-linux-gnu/cmake/Qt6WebEngineQuick/",
-			"Qt6Core5Compat_DIR":			"/app/lib/x86_64-linux-gnu/cmake/Qt6Core5Compat/"
+			"R_HOME": 							"/app/lib64/R/"
 		}
 	},
 	"cleanup": [
@@ -150,7 +147,9 @@
 			[ 
 				"--trace-expand",
 				"-DINSTALL_R_MODULES=ON",
-				"-DFLATPAK_USED=ON"
+				"-DFLATPAK_USED=ON",
+				"-DQt6WebEngineQuick_DIR=/app/lib/x86_64-linux-gnu/cmake/Qt6WebEngineQuick/",
+				"-DQt6Core5Compat_DIR=/app/lib/x86_64-linux-gnu/cmake/Qt6Core5Compat/"
 			] ,
 			"sources":
 			[
