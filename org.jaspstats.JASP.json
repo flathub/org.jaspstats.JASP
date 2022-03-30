@@ -147,7 +147,7 @@
 			"buildsystem": "simple",
 			"sources": [
 				{
-					"type": "archive",
+					"type": "git",
 					"url": "https://github.com/eddelbuettel/rinside",
 					"commit": "1bbbc837522e0517865d50622864fc8bf0e7d24c"
 				}
