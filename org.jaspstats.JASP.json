@@ -68,7 +68,7 @@
 		},
 		{
 			"name": "r",
-			"config-opts": ["--enable-R-shlib", "--disable-BLAS-shlib"],
+			"config-opts": ["--enable-R-shlib", "--disable-BLAS-shlib", "--libdir=/app/lib64"],
 			"build-options": {
 				"env": {
 					"CXX11":		"g++",
