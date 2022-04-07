@@ -11,7 +11,7 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/flatpak_archive_v0.16.2-flatpak.tar.gz",
-					"sha256": "d6577b32f9cdedeb4256ea8044735a14f785cfe6cf16c5bf45c38e9740f10d0e"
+					"sha256": "5ef92f675bc32f0b2e915d91431d170c4c2b052228360f2e25c25e502512f574"
 				}
 			],
 			"build-commands": [ "R --vanilla --file=flatpak-helper/r-helpers/flatpakRegenerateRenvStructure.R" ]
