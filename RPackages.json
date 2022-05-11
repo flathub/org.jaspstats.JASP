@@ -10,7 +10,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "file:///home/falafel/Broncode/JASP/jasp-desktop/Tools/flatpak/setup-rpkgs/archives/flatpak_archive_516f996472b41c86d74d3f9b9450316211d22b60.tar.gz",
+					"url": "https://static.jasp-stats.org/flatpak_archive_516f996472b41c86d74d3f9b9450316211d22b60.tar.gz",
 					"sha256": "547774191b919ef86a10b86c41807a1d5b13486a225ce6482fbde2d2058d802a"
 				}
 			],
