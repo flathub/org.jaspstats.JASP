@@ -18,7 +18,7 @@
 		"cxxflags": 				"-O2 -g -Wno-error",
 		"cflags": 					"-Wno-error",
 		"ldflags":					"-lgfortran",
-		"append-ld-library-path": 	"/app/lib64/R/lib",
+		"append-ld-library-path": 	"/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/",
 		"env": {
 
             "CXX11":		"g++",
@@ -178,7 +178,7 @@
 			[
 				{
 					"type":		"git",
-					"branch":	"stableFlatpakCmake",
+					"branch":	"cmakeFlatpak",
 					"url": 		"https://github.com/JorisGoosen/jasp-desktop"
 				}
 			]
