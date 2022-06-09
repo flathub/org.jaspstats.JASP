@@ -178,8 +178,8 @@
 			[
 				{
 					"type":		"git",
-					"branch":	"cmakeFlatpak",
-					"url": 		"https://github.com/JorisGoosen/jasp-desktop"
+					"branch":	"stable",
+					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
 		}
