@@ -178,7 +178,7 @@
 			[
 				{
 					"type":		"git",
-					"branch":	"stable",
+					"branch":	"development",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
