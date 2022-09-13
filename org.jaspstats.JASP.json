@@ -46,7 +46,7 @@
 			"sources":[
 				{
 					"type":	"git",
-					"tag":	"v6.2.3",
+					"tag":	"v6.3.1",
 					"url":	"https://github.com/qt/qt5compat"					
 				}
 			]	
