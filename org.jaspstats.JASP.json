@@ -149,7 +149,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/eddelbuettel/rinside",
-					"commit": "1bbbc837522e0517865d50622864fc8bf0e7d24c"
+					"commit": "359ca2dbfc8b286635ffd0ef2bedfbe450df40b5"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
