@@ -137,7 +137,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/RcppCore/Rcpp",
-					"tag": "1.0.8.3"
+					"tag": "1.0.9"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
