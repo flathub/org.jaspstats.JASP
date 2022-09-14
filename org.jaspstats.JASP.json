@@ -23,8 +23,10 @@
 
             "CXX11":		"g++",
 			"CXX14":		"g++",
+			"CXX17":		"g++",
 			"CXX11FLAGS":	"-std=gnu++11",
 			"CXX14FLAGS":	"-std=gnu++14",
+			"CXX17FLAGS":	"-std=gnu++17",
 
 			"JASP_R_REPOSITORY":				"file:///app/lib64/local-cran",
 			"GITHUB_PAT_DEF":					"Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
