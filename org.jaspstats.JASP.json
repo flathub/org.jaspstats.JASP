@@ -1,10 +1,10 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":		"6.3",
+	"runtime-version":		"6.2",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":			"6.3",
+	"base-version":			"6.2",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
 		"--socket=x11",
@@ -48,7 +48,7 @@
 			"sources":[
 				{
 					"type":	"git",
-					"tag":	"v6.3.1",
+					"tag":	"v6.2.3",
 					"url":	"https://github.com/qt/qt5compat"					
 				}
 			]	
