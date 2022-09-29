@@ -23,8 +23,10 @@
 
             "CXX11":		"g++",
 			"CXX14":		"g++",
+			"CXX17":		"g++",
 			"CXX11FLAGS":	"-std=gnu++11",
 			"CXX14FLAGS":	"-std=gnu++14",
+			"CXX17FLAGS":	"-std=gnu++17",
 
 			"JASP_R_REPOSITORY":				"file:///app/lib64/local-cran",
 			"GITHUB_PAT_DEF":					"Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
@@ -62,7 +64,7 @@
 				{
 					"type": 	"git",
 					"url": 		"https://github.com/boostorg/boost",
-					"tag": 		"boost-1.79.0"
+					"tag": 		"boost-1.80.0"
 				}
 			]
 		},
@@ -80,8 +82,8 @@
 			"sources": [
 				{
 					"type":   "archive",
-					"url":    "http://cran.r-project.org/src/base/R-4/R-4.2.0.tar.gz",
-					"sha256": "38eab7719b7ad095388f06aa090c5a2b202791945de60d3e2bb0eab1f5097488"
+					"url":    "http://cran.r-project.org/src/base/R-4/R-4.2.1.tar.gz",
+					"sha256": "4d52db486d27848e54613d4ee977ad952ec08ce17807e1b525b10cd4436c643f"
 				}
 			]
 		},
@@ -112,8 +114,8 @@
 			"sources": [
 				{
 					"type":   "archive",
-					"sha256": "8ac5dd57982bfd7d5f0ee384499d62f3e0bb35b5f1660feb368545f1186371fc",
-					"url":    "https://static.jasp-stats.org/RPkgs/JAGS-4.3.0.tar.gz"
+					"sha256": "f9258355b5e9eb13bd33c5fa720f0cbebacea7d0a4a42b71b0fb14501ee14229",
+					"url":    "https://static.jasp-stats.org/RPkgs/JAGS-4.3.1.tar.gz"
 				} ]
 		},
 		{
@@ -137,7 +139,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/RcppCore/Rcpp",
-					"tag": "1.0.8.3"
+					"tag": "1.0.9"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
@@ -149,7 +151,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/eddelbuettel/rinside",
-					"commit": "1bbbc837522e0517865d50622864fc8bf0e7d24c"
+					"commit": "359ca2dbfc8b286635ffd0ef2bedfbe450df40b5"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
@@ -178,7 +180,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"v0.16.3",
+					"commit":	"786196eb13a8868d94d5356b2a0dc57229818e67",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
