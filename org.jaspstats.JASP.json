@@ -114,7 +114,7 @@
 			"sources": [
 				{
 					"type":   	"git",
-					"tag": 		"v1.5.0",
+					"tag": 		"v1.2.0",
 					"url":    	"https://github.com/libgit2/libgit2"
 				} ]
 		},
