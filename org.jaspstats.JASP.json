@@ -107,6 +107,17 @@
 					"url":    "https://static.jasp-stats.org/RPkgs/JAGS-4.3.1.tar.gz"
 				} ]
 		},
+		{
+			"name":			"git2",
+			"buildsystem":	"cmake",
+			"builddir":		true,
+			"sources": [
+				{
+					"type":   	"git",
+					"tag": 		"v1.5.0",
+					"url":    	"https://github.com/libgit2/libgit2"
+				} ]
+		},
 
 		"RPackages.json",
 		
