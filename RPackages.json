@@ -10,7 +10,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "file:///home/sp42/jasp-desktop/Tools/flatpak/setup-rpkgs/archives/flatpak_archive_v0.17.0.tar.gz",
+					"url": "https://static.jasp-stats.org/flatpak_archive_v0.17.0.tar.gz",
 					"sha256": "69bf9b7115c98835b60255ad5fb07721af370017e00d339418fcf71bd441eda5"
 				}
 			],
