@@ -1,13 +1,13 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":		"6.2",
+	"runtime-version":		"6.3",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":			"6.2",
+	"base-version":			"6.3",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
-		"--socket=fallback-x11",
+		"--socket=x11",
 		"--socket=wayland",
 		"--share=ipc",
 		"--share=network",
@@ -48,7 +48,7 @@
 			"sources":[
 				{
 					"type":	"git",
-					"tag":	"v6.2.3",
+					"tag":	"v6.3.2",
 					"url":	"https://github.com/qt/qt5compat"					
 				}
 			]	
@@ -82,8 +82,8 @@
 			"sources": [
 				{
 					"type":   "archive",
-					"url":    "http://cran.r-project.org/src/base/R-4/R-4.2.1.tar.gz",
-					"sha256": "4d52db486d27848e54613d4ee977ad952ec08ce17807e1b525b10cd4436c643f"
+					"url":    "http://cran.r-project.org/src/base/R-4/R-4.2.2.tar.gz",
+					"sha256": "0ff62b42ec51afa5713caee7c4fde7a0c45940ba39bef8c5c9487fef0c953df5"
 				}
 			]
 		},
@@ -96,17 +96,6 @@
 					"type":	"git",
 					"tag":	"v3.10.0",
 					"url": 	"https://github.com/Reference-LAPACK/lapack"
-				} ]
-		},
-		{
-			"name": 		"jsoncpp",
-			"buildsystem":	"cmake",
-			"builddir":		true,
-			"sources": [
-				{
-					"type":	"git",
-					"tag":	"1.9.5",
-					"url": 	"https://github.com/open-source-parsers/jsoncpp"
 				} ]
 		},
 		{
@@ -151,7 +140,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/eddelbuettel/rinside",
-					"commit": "359ca2dbfc8b286635ffd0ef2bedfbe450df40b5"
+					"commit": "ea0dbdad353900aee7a2801927365780c7daf927"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
@@ -180,7 +169,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"62ac36111c6918e61763dbb4613c748ad82de8cb",
+					"tag":          "v0.17.0-flatpak",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
