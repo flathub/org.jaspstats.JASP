@@ -169,8 +169,8 @@
 			[
 				{
 					"type":		"git",
-					"tag":		"v0.17.0-flatpak",
-					"url": 		"https://github.com/jasp-stats/jasp-desktop"
+					"commit":	"dc599cdfcebca038520169b1939efbe9271d00b7",
+					"url": 		"https://github.com/RensDofferhoff/jasp-desktop.git"
 				}
 			]
 		}
