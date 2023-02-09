@@ -10,8 +10,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://static.jasp-stats.org/flatpak_archive_165d2ad0198d403e51f3f9b4e886fc2ff854ff02.tar.gz",
-					"sha256": "59d6988bea07cc424c4e41f6c58f7e7b41067d8f385d22d4e2a7c392af1b4639"
+					"url": "https://static.jasp-stats.org/flatpak_archive_bde88f1df52a7be26faf3faea0071f23870a147c.tar.gz",
+					"sha256": "e91671452f1ed1369fa22c51bddf4926198fb501153ac4bd5376f12ffaba0f03"
 				}
 			],
 			"build-commands": [ "R --vanilla --file=flatpak-helper/r-helpers/flatpakRegenerateRenvStructure.R" ]
