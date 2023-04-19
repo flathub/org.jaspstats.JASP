@@ -42,6 +42,7 @@
 		"/include"
 	],
 	"modules":[
+		"deps/mpfr.json",
 		{
 			"name":			"qt5compat",
 			"buildsystem":	"cmake",
@@ -118,7 +119,6 @@
 					"url":    	"https://github.com/libgit2/libgit2"
 				} ]
 		},
-
 		"RPackages.json",
 		
 		{
