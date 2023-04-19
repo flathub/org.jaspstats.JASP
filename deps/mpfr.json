@@ -1,0 +1,16 @@
+{
+    "name": 		"mpfr",
+    "buildsystem": 	"simple",
+    "build-commands":[
+        "./configure --prefix /app",
+        "make",
+        "make install" 
+    ],
+    "sources":[
+        {
+            "type": 	"archive",
+            "url": 		"https://www.mpfr.org/mpfr-current/mpfr-4.2.0.tar.xz",
+            "sha256":   "06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993"
+        }
+    ]
+}
