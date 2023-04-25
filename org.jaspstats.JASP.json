@@ -1,10 +1,10 @@
 {
 	"app-id":			"org.jaspstats.JASP",
 	"runtime": 			"org.kde.Platform",
-	"runtime-version":	"6.4",
+	"runtime-version":	"6.3",
 	"sdk": 				"org.kde.Sdk",
 	"base":				"io.qt.qtwebengine.BaseApp",
-	"base-version":		"6.4",
+	"base-version":		"6.3",
 	"command": 			"org.jaspstats.JASP",
 	"finish-args": [
 		"--socket=x11",
@@ -18,7 +18,7 @@
 		"cxxflags": 				"-O2 -g -Wno-error",
 		"cflags": 					"-Wno-error",
 		"ldflags":					"-lgfortran",
-		"append-ld-library-path": 	"/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu",
+		"append-ld-library-path": 	"/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/",
 		"env": {
 
             "CXX11":		"g++",
@@ -49,7 +49,7 @@
 			"sources":[
 				{
 					"type":	"git",
-					"tag":	"v6.4.3",
+					"tag":	"v6.32",
 					"url":	"https://github.com/qt/qt5compat"					
 				}
 			]	
