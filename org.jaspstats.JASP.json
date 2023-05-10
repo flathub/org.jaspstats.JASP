@@ -18,7 +18,7 @@
 		"cxxflags": 				"-O2 -g -Wno-error",
 		"cflags": 					"-Wno-error",
 		"ldflags":					"-lgfortran",
-		"append-ld-library-path": 	"/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/",
+		"append-ld-library-path": 	"/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/",
 		"env": {
 
             "CXX11":		"g++",
@@ -128,7 +128,7 @@
 				{
 					"type": "git",
 					"url": "https://github.com/RcppCore/Rcpp",
-					"tag": "1.0.9"
+					"tag": "1.0.10"
 				}
 			],
 			"build-commands": [ "R CMD INSTALL ." ]
@@ -151,7 +151,7 @@
 			"sources": [
 				{
 					"type":	"git",
-					"tag":	"v1.1.7",
+					"tag":	"v1.1.8",
 					"url": 	"https://github.com/WizardMac/ReadStat"
 				} ]
 		},
@@ -169,7 +169,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"7ee09298bffe5bf602cb14133a7e557054b70c78",
+					"commit":	"fc1a4e369f678e1ee95ffb31d1289ba6397619f6",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop.git"
 				}
 			]
