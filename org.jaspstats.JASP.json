@@ -152,7 +152,7 @@
 			"sources": [
 				{
 					"type":	"git",
-					"tag":	"v1.1.8",
+					"tag":	"v1.1.9",
 					"url": 	"https://github.com/WizardMac/ReadStat"
 				} ]
 		},
