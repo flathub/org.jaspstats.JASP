@@ -170,7 +170,7 @@
 			[
 				{
 					"type":		"git",
-					"tag":      "v0.17.2-flatpak",
+					"tag":      "v0.17.2.1",
 					"url": 		"https://github.com/jasp-stats/jasp-desktop"
 				}
 			]
