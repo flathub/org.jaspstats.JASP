@@ -9,7 +9,7 @@
 	"finish-args": [
 		"--socket=x11",
 		"--socket=wayland",
-		"--share=ipc",
+		"--share=ipc", 
 		"--share=network",
 		"--filesystem=home",
 		"--device=dri"
