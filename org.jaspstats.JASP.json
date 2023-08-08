@@ -170,7 +170,7 @@
 			[
 				{
 					"type":		"git",
-					"commit":	"eb98e6da67d6d46fb1fc80d5c51affc5f78c7e83", 
+					"commit":	"ba91fb991382d9f83c6ab0c2d9b734341bfb6def", 
 					"url": 		"https://github.com/shun2wang/jasp-desktop.git"
 				}
 			]
