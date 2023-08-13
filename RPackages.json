@@ -1,6 +1,6 @@
 {
 	"name": "RPackages2",
-	"buildsystem": "simple",
+	"buildsystem": "simple", 
 	"build-commands": [],
 	"modules":
 	[
