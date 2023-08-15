@@ -10,11 +10,12 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://static.jasp-stats.org/flatpak_archive_v0.18.0-beta.tar.gz",
-					"sha256": "f6bb39dce1ebb4c57b0ab50c928f399abafbf988b6ef33c57fea4b1320e3a461"
+					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz",
+					"sha256": "7f99ddf760702015164664bcfe2462dfbf4b6b40912ff628f1de3dbe895a63c4"
 				}
 			],
-			"build-commands": [ "R --vanilla --file=flatpak-helper/r-helpers/flatpakRegenerateRenvStructure.R" ]
+      "build-commands": ["cd ./flatpak-helper/local-cran/src/contrib && gunzip rstanarm* && tar --delete -vf rstanarm_*.tar rstanarm/cleanup && gzip rstanarm*.tar",
+					"R --vanilla --file=flatpak-helper/r-helpers/flatpakRegenerateRenvStructure.R" ]
 		}
 	]
 }
