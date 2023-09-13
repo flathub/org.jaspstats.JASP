@@ -10,7 +10,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "http://static.jasp-stats.org/flatpak_archive_0.18.0.0.tar.gz",
+					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz",
 					"sha256": "1fb152426a01425280424b2724356a1dcc8ce71a58c85bac3a061c88e2718de0"
 				}
 			],
