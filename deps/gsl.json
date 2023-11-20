@@ -9,7 +9,7 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://mirror.ibcp.fr/pub/gnu/gsl/gsl-latest.tar.gz",
+            "url": 		"https://mirror.ibcp.fr/pub/gnu/gsl/gsl-2.7.1.tar.gz",
             "sha256":   "dcb0fbd43048832b757ff9942691a8dd70026d5da0ff85601e52687f6deeb34b"
         }
     ]
