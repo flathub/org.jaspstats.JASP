@@ -39,6 +39,7 @@
     ],
     "modules": [
         "deps/mpfr.json",
+        "deps/gsl.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
