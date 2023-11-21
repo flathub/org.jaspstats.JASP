@@ -23,9 +23,11 @@
             "CXX11": "g++",
             "CXX14": "g++",
             "CXX17": "g++",
+            "CXX20": "g++",
             "CXX11FLAGS": "-std=gnu++11",
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
+            "CXX20FLAGS": "-std=gnu++20",
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
@@ -39,13 +41,14 @@
     ],
     "modules": [
         "deps/mpfr.json",
+        "deps/gsl.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.5.2",
+                    "tag": "v6.5.3",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -69,7 +72,6 @@
             "name": "r",
             "config-opts": [
                 "--enable-R-shlib",
-                "--disable-BLAS-shlib",
                 "--libdir=/app/lib64"
             ],
             "build-options": {
@@ -79,12 +81,12 @@
                     "CXX11FLAGS": "-std=gnu++11",
                     "CXX14FLAGS": "-std=gnu++14"
                 }
-            },
+            }, 
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://cran.r-project.org/src/base/R-4/R-4.2.2.tar.gz",
-                    "sha256": "0ff62b42ec51afa5713caee7c4fde7a0c45940ba39bef8c5c9487fef0c953df5"
+                    "url": "http://cran.r-project.org/src/base/R-4/R-4.3.2.tar.gz",
+                    "sha256": "b3f5760ac2eee8026a3f0eefcb25b47723d978038eee8e844762094c860c452a"
                 }
             ]
         },
@@ -173,7 +175,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "5a83d3f3902440b7c5b5b9c479533da5201be715",
+                    "commit": "0327baa2c7486ac9e25826f8a7325d62530ae2bd",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
