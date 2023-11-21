@@ -46,7 +46,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.5.2",
+                    "tag": "v6.5.3",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -70,7 +70,6 @@
             "name": "r",
             "config-opts": [
                 "--enable-R-shlib",
-                "--disable-BLAS-shlib",
                 "--libdir=/app/lib64"
             ],
             "build-options": {
