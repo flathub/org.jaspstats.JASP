@@ -80,7 +80,7 @@
                     "CXX11FLAGS": "-std=gnu++11",
                     "CXX14FLAGS": "-std=gnu++14"
                 }
-            },
+            }, 
             "sources": [
                 {
                     "type": "archive",
