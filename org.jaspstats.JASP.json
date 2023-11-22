@@ -81,7 +81,7 @@
                     "CXX11FLAGS": "-std=gnu++11",
                     "CXX14FLAGS": "-std=gnu++14"
                 }
-            }, 
+            },
             "sources": [
                 {
                     "type": "archive",
@@ -175,7 +175,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "0327baa2c7486ac9e25826f8a7325d62530ae2bd",
+                    "commit": "83c35ec12607829fceaace8e8d623965f8a9df65",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
