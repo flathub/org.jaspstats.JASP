@@ -51,7 +51,7 @@
                     "tag": "v6.5.3",
                     "url": "https://github.com/qt/qt5compat"
                 }
-            ]
+            ] 
         },
         {
             "name": "boost",
@@ -175,7 +175,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "270d15487d835012d9cd800f6c894505e22ec70c",
+                    "commit": "b38ff15729ce819b063ee4d88e91d98b2410718a",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
