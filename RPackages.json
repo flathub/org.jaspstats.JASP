@@ -11,7 +11,7 @@
 				{
 					"type": "archive",
 					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz",
-					"sha256": "045cddd0dc2d0bbd1cfcc924c66887ddae5acf33d38067b73522386624b59188"
+					"sha256": "5b1ee8e8f5af8fcf2f37a6a083b589c34e6a9797a3f03ff0f1832e499b6518bb"
 				}
 			],
       "build-commands": ["cd ./flatpak-helper/local-cran/src/contrib && gunzip rstanarm* && tar --delete -vf rstanarm_*.tar rstanarm/cleanup && gzip rstanarm*.tar",
