@@ -10,8 +10,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "http://static.jasp-stats.org/flatpak_archive_0.18.1.0.tar.gz",
-					"sha256": "95d8a6b4b440c024ced2a8f13a8122a16d1ad7a00be460cb6e480f6eaaf1cd28"
+					"url": "http://static.jasp-stats.org/flatpak_archive_0.18.2.tar.gz",
+					"sha256": "5b1ee8e8f5af8fcf2f37a6a083b589c34e6a9797a3f03ff0f1832e499b6518bb"
 				}
 			],
       "build-commands": ["cd ./flatpak-helper/local-cran/src/contrib && gunzip rstanarm* && tar --delete -vf rstanarm_*.tar rstanarm/cleanup && gzip rstanarm*.tar",
@@ -19,4 +19,3 @@
 		}
 	]
 }
-
