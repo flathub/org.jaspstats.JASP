@@ -1,10 +1,10 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.4",
+    "runtime-version": "6.5",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.4",
+    "base-version": "6.5",
     "command": "org.jaspstats.JASP",
     "finish-args": [
         "--socket=x11",
@@ -23,9 +23,11 @@
             "CXX11": "g++",
             "CXX14": "g++",
             "CXX17": "g++",
+            "CXX20": "g++",
             "CXX11FLAGS": "-std=gnu++11",
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
+            "CXX20FLAGS": "-std=gnu++20",
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
@@ -39,13 +41,14 @@
     ],
     "modules": [
         "deps/mpfr.json",
+        "deps/gsl.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.4.2",
+                    "tag": "v6.5.3",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -69,7 +72,6 @@
             "name": "r",
             "config-opts": [
                 "--enable-R-shlib",
-                "--disable-BLAS-shlib",
                 "--libdir=/app/lib64"
             ],
             "build-options": {
@@ -83,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://cran.r-project.org/src/base/R-4/R-4.2.2.tar.gz",
-                    "sha256": "0ff62b42ec51afa5713caee7c4fde7a0c45940ba39bef8c5c9487fef0c953df5"
+                    "url": "http://cran.r-project.org/src/base/R-4/R-4.3.2.tar.gz",
+                    "sha256": "b3f5760ac2eee8026a3f0eefcb25b47723d978038eee8e844762094c860c452a"
                 }
             ]
         },
@@ -173,7 +175,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "41a2f91f02da330c15d25f10ab64d9e662c87140",
+                    "commit": "35ebb397b2ef093ee9c52a97e665e8e1e28d02a4",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]

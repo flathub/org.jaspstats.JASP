@@ -1,5 +1,5 @@
 {
-    "name": 		"mpfr",
+    "name": 		"gsl",
     "buildsystem": 	"simple",
     "build-commands":[
         "./configure --prefix /app",
@@ -9,8 +9,8 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://www.mpfr.org/mpfr-4.2.0/mpfr-4.2.0.tar.xz",
-            "sha256":   "06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993"
+            "url": 		"https://mirror.ibcp.fr/pub/gnu/gsl/gsl-2.7.1.tar.gz",
+            "sha256":   "dcb0fbd43048832b757ff9942691a8dd70026d5da0ff85601e52687f6deeb34b"
         }
     ]
 }
