@@ -13,7 +13,7 @@
         "--share=network",
         "--filesystem=home",
         "--device=dri"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
