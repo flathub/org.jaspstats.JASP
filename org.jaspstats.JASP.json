@@ -13,7 +13,7 @@
         "--share=network",
         "--filesystem=home",
         "--device=dri"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
@@ -34,7 +34,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/"
-        }
+        } 
     },
     "cleanup": [
         "/include"
@@ -175,7 +175,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "f33be1cd93824ee994e71aad3416a361aff28e48",
+                    "commit": "96d6b46acbf3820f9c603b6b76911cf6fe052e76",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
