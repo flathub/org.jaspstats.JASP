@@ -42,7 +42,7 @@
     "modules": [
         "deps/mpfr.json",
         "deps/gsl.json",
-        "deps/gplk.json",
+        "deps/glpk.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
