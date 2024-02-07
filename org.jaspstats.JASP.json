@@ -6,14 +6,14 @@
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.5",
     "command": "org.jaspstats.JASP",
-    "finish-args": [
+    "finish-args": [ 
         "--socket=x11",
         "--socket=wayland",
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
         "--device=dri"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
@@ -42,6 +42,7 @@
     "modules": [
         "deps/mpfr.json",
         "deps/gsl.json",
+        "deps/glpk.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
@@ -175,7 +176,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "5ae18683f36c89f66ae3b62ec23140f55cd17100",
+                    "commit": "9c729ba8aa2bbd5844293e096fdd061d4595d13b",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
