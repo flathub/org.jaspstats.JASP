@@ -6,7 +6,7 @@
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.5",
     "command": "org.jaspstats.JASP",
-    "finish-args": [
+    "finish-args": [ 
         "--socket=x11",
         "--socket=wayland",
         "--share=ipc",
