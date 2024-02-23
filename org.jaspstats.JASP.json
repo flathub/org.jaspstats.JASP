@@ -7,8 +7,8 @@
     "base-version": "6.5",
     "command": "org.jaspstats.JASP",
     "finish-args": [
-        "--socket=x11",
         "--socket=wayland",
+        "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
