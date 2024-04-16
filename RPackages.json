@@ -10,7 +10,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz/cellar.tar.gz",
+					"url": "http://static.jasp-stats.org/cellar.tar.gz",
 					"sha256": "3b4988aa821c6244c891230073d751f3d46014c4e9fe00af5575bee1044d15a4"
 				}
 			],
