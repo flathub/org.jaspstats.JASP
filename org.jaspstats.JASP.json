@@ -125,35 +125,19 @@
                 }
             ]
         },
+        {
+			"name": "v8",
+			"buildsystem": "simple",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://static.jasp-stats.org/v8.tar.gz",
+					"sha256": "a3502529ec118a7b86e20f17482f58d94931d3d49fcacf8ef86ded4ad4678612"
+				}
+			],
+            "build-commands": ["mkdir /app/lib64/v8", "cp -r * /app/lib64/v8/"]
+		},
         "RPackages.json",
-        {
-            "name": "Rcpp",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/RcppCore/Rcpp",
-                    "tag": "1.0.10"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
-        {
-            "name": "RInside",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/eddelbuettel/rinside",
-                    "commit": "ea0dbdad353900aee7a2801927365780c7daf927"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
         {
             "name": "readstat",
             "sources": [
@@ -171,12 +155,11 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"
-            ],
+                "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "c8c4acf1dcb12480b97fe7e07583b903366768df",
+                   "type": "git",
+                    "commit": "57da0007a62b3ab0ea3bccdf8d5a6e24c066956f",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]

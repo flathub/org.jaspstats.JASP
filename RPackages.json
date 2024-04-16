@@ -10,12 +10,11 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz",
-					"sha256": "35598158979e704a15e04d99351cc5f96196e7565f59d12f21f154a471f7c931"
+					"url": "http://static.jasp-stats.org/flatpak_archive_buildbot.tar.gz/cellar.tar.gz",
+					"sha256": "3b4988aa821c6244c891230073d751f3d46014c4e9fe00af5575bee1044d15a4"
 				}
 			],
-      "build-commands": ["cd ./flatpak-helper/local-cran/src/contrib && gunzip rstanarm* && tar --delete -vf rstanarm_*.tar rstanarm/cleanup && gzip rstanarm*.tar",
-					"R --vanilla --file=flatpak-helper/r-helpers/flatpakRegenerateRenvStructure.R" ]
+      "build-commands": ["mkdir /app/lib64/cellar", "cp * /app/lib64/cellar", "find /run/build/","find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"]
 		}
 	]
 }
