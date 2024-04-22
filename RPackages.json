@@ -3,7 +3,7 @@
 	"buildsystem": "simple",
 	"build-commands": [],
 	"modules":
-	[
+	[ 
 		{
 			"name": "Rpackages",
 			"buildsystem": "simple",
