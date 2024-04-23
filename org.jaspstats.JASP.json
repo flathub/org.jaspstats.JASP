@@ -131,11 +131,11 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "http://static.jasp-stats.org/v8.tar.gz",
-					"sha256": "a3502529ec118a7b86e20f17482f58d94931d3d49fcacf8ef86ded4ad4678612"
+					"url": "https://static.jasp-stats.org/v8.tar.gz",
+					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
 				}
 			],
-            "build-commands": ["mkdir /app/lib64/v8", "cp -r * /app/lib64/v8/"]
+            "build-commands": [ "./install.sh"]
 		},
         "RPackages.json",
         {
@@ -159,8 +159,8 @@
             "sources": [
                 {
                    "type": "git",
-                    "commit": "57da0007a62b3ab0ea3bccdf8d5a6e24c066956f",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "commit": "23778a31d356f87ee890bace1e62dd6cdb160b78",
+                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
         }
