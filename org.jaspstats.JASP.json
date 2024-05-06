@@ -13,7 +13,7 @@
         "--share=network",
         "--filesystem=home",
         "--device=dri"
-    ], 
+    ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
@@ -176,7 +176,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "4825b388f588478d5e4fae448240ab5ded435d86",
+                    "commit": "a2ea390e3d127f56f515b4407dcd5d48d003a74e",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
