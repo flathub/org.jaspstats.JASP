@@ -86,7 +86,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.0.tar.gz",
+                    "url": "http://cran.r-project.org/src/base/R-4/R-4.4.0.tar.gz",
                     "sha256": "ace4125f9b976d2c53bcc5fca30c75e30d4edc401584859cbadb080e72b5f030"
                 }
             ]
@@ -125,35 +125,19 @@
                 }
             ]
         },
+        {
+			"name": "v8",
+			"buildsystem": "simple",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
+					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+				}
+			],
+            "build-commands": [ "./install.sh"]
+		},
         "RPackages.json",
-        {
-            "name": "Rcpp",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/RcppCore/Rcpp",
-                    "tag": "1.0.10"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
-        {
-            "name": "RInside",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/eddelbuettel/rinside",
-                    "commit": "ea0dbdad353900aee7a2801927365780c7daf927"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
         {
             "name": "readstat",
             "sources": [
@@ -171,13 +155,12 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"
-            ],
+                "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "2f53f98b336720bfb44241df4145741a46b1d75e",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "type": "git",
+                   "commit": "76d8da6d9042d180416d506ad841b66fdd69de1d",
+                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
         }
