@@ -11,7 +11,7 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/cellar.tar.gz",
-					"sha256": "fb8cd23c1c0bf659ae7dba2093be7bdd6985fedac5e775cde020410bd973696c"
+					"sha256": "bf7b08f35869831c5461c11e14dc210145e90afe254e48f3e456536ac8941b49"
 				}
 			],
       "build-commands": ["mkdir /app/lib64/cellar", "cp * /app/lib64/cellar", "find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"]
