@@ -1,19 +1,19 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.5",
+    "runtime-version": "6.7",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.5",
+    "base-version": "6.7",
     "command": "org.jaspstats.JASP",
     "finish-args": [
-        "--socket=x11",
         "--socket=wayland",
+        "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
         "--device=dri"
-    ], 
+    ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
@@ -34,7 +34,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/"
-        } 
+        }
     },
     "cleanup": [
         "/include"
@@ -42,13 +42,14 @@
     "modules": [
         "deps/mpfr.json",
         "deps/gsl.json",
+        "deps/glpk.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.5.3",
+                    "tag": "v6.7.0",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -85,8 +86,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://cran.r-project.org/src/base/R-4/R-4.3.2.tar.gz",
-                    "sha256": "b3f5760ac2eee8026a3f0eefcb25b47723d978038eee8e844762094c860c452a"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
+                    "sha256": "b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d"
                 }
             ]
         },
@@ -124,35 +125,19 @@
                 }
             ]
         },
+        {
+			"name": "v8",
+			"buildsystem": "simple",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
+					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+				}
+			],
+            "build-commands": [ "./install.sh"]
+		},
         "RPackages.json",
-        {
-            "name": "Rcpp",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/RcppCore/Rcpp",
-                    "tag": "1.0.10"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
-        {
-            "name": "RInside",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/eddelbuettel/rinside",
-                    "commit": "ea0dbdad353900aee7a2801927365780c7daf927"
-                }
-            ],
-            "build-commands": [
-                "R CMD INSTALL ."
-            ]
-        },
         {
             "name": "readstat",
             "sources": [
@@ -170,13 +155,12 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"
-            ],
+                "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "1cfa6cb9d16ab49153b8a8c0b9d0288ec7941c79",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "type": "git",
+                   "commit": "8a781bf5af8e20d17be8e7038d150915973da210",
+                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
         }
