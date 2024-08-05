@@ -40,6 +40,7 @@
         "/include"
     ],
     "modules": [
+        "deps/sqlite3.json",
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
