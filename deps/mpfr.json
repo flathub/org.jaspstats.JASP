@@ -2,6 +2,7 @@
     "name": 		"mpfr",
     "buildsystem": 	"simple",
     "build-commands":[
+        "autoreconf",
         "./configure --prefix /app",
         "make",
         "make install" 
