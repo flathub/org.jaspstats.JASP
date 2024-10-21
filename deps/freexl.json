@@ -1,5 +1,5 @@
 {
-    "name": 		"mpfr",
+    "name": 		"freexl",
     "buildsystem": 	"simple",
     "build-commands":[
         "./configure --prefix /app",
