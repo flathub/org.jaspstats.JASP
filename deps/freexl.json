@@ -9,7 +9,7 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://www.gaia-gis.it/gaia-sins/freexl-2.0.0.tar.gz",
+            "url": 		"https://static.jasp-stats.org/freexl-2.0.0.tar.gz",
             "sha256":   "fed8f3a5743bdbc2c9965145a52a54578fa99dc92c07eb56bd57390a72e9319f"
         }
     ]
