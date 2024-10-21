@@ -2,7 +2,6 @@
     "name": 		"mpfr",
     "buildsystem": 	"simple",
     "build-commands":[
-        "autoreconf",
         "./configure --prefix /app",
         "make",
         "make install" 
@@ -10,8 +9,8 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://static.jasp-stats.org/mpfr-4.2.1.tar.xz",
-            "sha256":   "b87753b3f000922972a0b1be1f4ae500945b33962e14892341358e2f7281f3eb"
+            "url": 		"https://www.mpfr.org/mpfr-4.2.0/mpfr-4.2.0.tar.xz",
+            "sha256":   "06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993"
         }
     ]
 }
