@@ -12,7 +12,7 @@
         "--share=ipc",
         "--share=network",
         "--device=dri"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-Wno-error",
@@ -39,6 +39,7 @@
         "/include"
     ],
     "modules": [
+        "deps/freexl.json",
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
@@ -48,7 +49,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.0",
+                    "tag": "v6.7.2",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -157,9 +158,9 @@
                 "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                   "type": "git",
-                   "commit": "a7ca00d09fc8a4c990031d10ba3d20a43c86d823",
-                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                    "type": "git",
+                    "commit": "f70022e3313279fc9191c194935b98e847ee9827",
+                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
         }

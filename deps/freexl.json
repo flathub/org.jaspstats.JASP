@@ -1,16 +1,16 @@
 {
-    "name": 		"mpfr",
+    "name": 		"freexl",
     "buildsystem": 	"simple",
     "build-commands":[
         "./configure --prefix /app",
         "make",
         "make install" 
-    ],
+    ], 
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://static.jasp-stats.org/mpfr-4.2.1.tar.xz",
-            "sha256":   "b87753b3f000922972a0b1be1f4ae500945b33962e14892341358e2f7281f3eb"
+            "url": 		"https://static.jasp-stats.org/freexl-2.0.0.tar.gz",
+            "sha256":   "fed8f3a5743bdbc2c9965145a52a54578fa99dc92c07eb56bd57390a72e9319f"
         }
     ]
 }
