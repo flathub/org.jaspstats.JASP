@@ -159,10 +159,11 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "f70022e3313279fc9191c194935b98e847ee9827",
+                    "commit": "ff0c4c0a72163439adf3fe331153d78ae717d79a",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
-            ]
+            ],
+            "post-install": ["chmod -R u+w ./"]
         }
     ]
 }
