@@ -10,8 +10,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://static.jasp-stats.org/cellar_beta.tar.gz",
-					"sha256": "02b176ad391549f694fb27612bb86aa7bbbb94e16f6f4a5d0fc03a4abb9a0d6a"
+					"url": "https://static.jasp-stats.org/development/cellars/cellar_flatpak_sources_latest.tar.gz",
+					"sha256": "baafd2744080dcc53ab9ee5fdbf58b8768ebe5effddb04a0b512355bf7097b8c"
 				}
 			],
       "build-commands": ["mkdir /app/lib64/cellar", "cp * /app/lib64/cellar", "find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"]
