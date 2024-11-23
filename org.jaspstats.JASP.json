@@ -11,7 +11,7 @@
         "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
-	"--filesystem=home",
+        "--filesystem=home",
         "--device=dri"
     ],
     "build-options": {
@@ -50,7 +50,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.2",
+                    "tag": "v6.7.3",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -66,7 +66,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/boostorg/boost",
-                    "tag": "boost-1.80.0"
+                    "tag": "boost-1.86.0"
                 }
             ]
         },
@@ -87,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
-                    "sha256": "b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.2.tar.gz",
+                    "sha256": "1578cd603e8d866b58743e49d8bf99c569e81079b6a60cf33cdf7bdffeb817ec"
                 }
             ]
         },
@@ -99,7 +99,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.12.0",
                     "url": "https://github.com/Reference-LAPACK/lapack"
                 }
             ]
@@ -121,7 +121,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v1.2.0",
+                    "tag": "v1.8.4",
                     "url": "https://github.com/libgit2/libgit2"
                 }
             ]
@@ -160,7 +160,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "d71945ca3c3ff2164155c3468c2a841f1ceb9c7a",
+                    "commit": "ed6c07b49b0fd4d6afa2040139c66d49079db9fc",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
