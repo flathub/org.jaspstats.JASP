@@ -28,6 +28,7 @@
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
             "CXX20FLAGS": "-std=gnu++20",
+	    "CFLAGS": "-Wno-error -O2", 
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
