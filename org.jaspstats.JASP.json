@@ -11,12 +11,12 @@
         "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
-	"--filesystem=home",
-        "--device=dri"
+        "--filesystem=home",
+        "--device=dri" 
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
-        "cflags": "-Wno-error",
+        "cflags": "-O2 -Wno-error",
         "ldflags": "-lgfortran",
         "append-ld-library-path": "/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/",
         "env": {
@@ -28,6 +28,7 @@
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
             "CXX20FLAGS": "-std=gnu++20",
+	    "CFLAGS": "-Wno-error -O2", 
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
@@ -66,7 +67,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/boostorg/boost",
-                    "tag": "boost-1.80.0"
+                    "tag": "boost-1.86.0"
                 }
             ]
         },
@@ -121,7 +122,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v1.2.0",
+                    "tag": "v1.8.4",
                     "url": "https://github.com/libgit2/libgit2"
                 }
             ]
@@ -160,7 +161,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "5c1c6947435168a8bad73f9ae351c2539fb61504",
+                    "commit": "143f0a330bbece694ddf77abb7f792d684f7c238",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
