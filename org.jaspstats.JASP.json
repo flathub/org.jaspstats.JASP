@@ -16,7 +16,7 @@
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
-        "cflags": "-Wno-error",
+        "cflags": "-O2 -Wno-error",
         "ldflags": "-lgfortran",
         "append-ld-library-path": "/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/",
         "env": {
