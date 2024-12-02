@@ -41,6 +41,7 @@
         "/include"
     ],
     "modules": [
+        "deps/sqlite3.json",
         "deps/freexl.json",
         "deps/mpfr.json",
         "deps/gsl.json",
