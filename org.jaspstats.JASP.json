@@ -12,11 +12,11 @@
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
-        "--device=dri"
+        "--device=dri" 
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
-        "cflags": "-Wno-error",
+        "cflags": "-O2 -Wno-error",
         "ldflags": "-lgfortran",
         "append-ld-library-path": "/app/lib64/R/lib:/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/",
         "env": {
@@ -28,6 +28,7 @@
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
             "CXX20FLAGS": "-std=gnu++20",
+	    "CFLAGS": "-Wno-error -O2", 
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
@@ -40,6 +41,8 @@
         "/include"
     ],
     "modules": [
+        "deps/sqlite3.json",
+        "deps/freexl.json",
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
@@ -49,7 +52,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.0",
+                    "tag": "v6.7.2",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -65,7 +68,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/boostorg/boost",
-                    "tag": "boost-1.80.0"
+                    "tag": "boost-1.86.0"
                 }
             ]
         },
@@ -120,7 +123,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v1.2.0",
+                    "tag": "v1.8.4",
                     "url": "https://github.com/libgit2/libgit2"
                 }
             ]
@@ -158,11 +161,12 @@
                 "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                   "type": "git",
-                   "commit": "a7ca00d09fc8a4c990031d10ba3d20a43c86d823",
-                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                    "type": "git",
+                    "commit": "410d926e25afc551d362204f8e57971185234544",
+                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
-            ]
+            ],
+            "post-install": ["chmod -R u+w ./"]
         }
     ]
 }
