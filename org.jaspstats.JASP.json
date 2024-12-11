@@ -1,10 +1,10 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.7",
+    "base-version": "6.8",
     "command": "org.jaspstats.JASP",
     "finish-args": [
         "--socket=wayland",
@@ -52,7 +52,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.2",
+                    "tag": "v6.8.1",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -162,7 +162,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "commit": "947fa795d8dec3d09f3a13b3b69b054852b2d589",
+                    "commit": "acebfb00460cf8b8d7c095ea0d1ba016e4a868d0",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
