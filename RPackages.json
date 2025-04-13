@@ -11,7 +11,7 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/development/cellars/cellar_flatpak_sources_latest.tar.gz",
-					"sha256": "6bda40cf66f56e61bec3e23c6a474293ceb58c623bcbb2839bac83acf329788e"
+					"sha256": "04fbb75235da80307b917579e234c443638df14c3c7716d468dd5e23e4c026de"
 				}
 			],
       "build-commands": ["mkdir /app/lib64/cellar", "cp * /app/lib64/cellar", "find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"]
