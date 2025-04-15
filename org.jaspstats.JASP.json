@@ -135,7 +135,7 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
-					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+					"sha256": "26e08ab7fe4c70aca35d68ec5391f7af4101a3250ede763064c5d3ff5b387675"
 				}
 			],
             "build-commands": [ "./install.sh"]
