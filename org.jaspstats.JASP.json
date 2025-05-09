@@ -11,7 +11,7 @@
         "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
-        "--filesystem=home:ro",
+        "--filesystem=home",
         "--device=dri" 
     ],
     "build-options": {
@@ -46,6 +46,7 @@
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
+        "deps/modules.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
@@ -140,7 +141,6 @@
 			],
             "build-commands": [ "./install.sh"]
 		},
-        "RPackages.json",
         {
             "name": "readstat",
             "sources": [
@@ -161,9 +161,9 @@
                 "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "7f2b3edeb6547a428459a9bb90b3287d55222158",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "type": "git",
+                   "commit": "50d046a6705095a8d4218132d6a5a2ca58dc91c5",
+                   "url": "https://github.com/RensDofferhoff/jasp-desktop.git"
                 }
             ],
             "post-install": ["chmod -R u+w ./"]
