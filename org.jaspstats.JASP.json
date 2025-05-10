@@ -46,6 +46,7 @@
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
+        "deps/modules.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
@@ -89,8 +90,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.2.tar.gz",
-                    "sha256": "1578cd603e8d866b58743e49d8bf99c569e81079b6a60cf33cdf7bdffeb817ec"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.5.0.tar.gz",
+                    "sha256": "3b33ea113e0d1ddc9793874d5949cec2c7386f66e4abfb1cef9aec22846c3ce1"
                 }
             ]
         },
@@ -135,12 +136,11 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
-					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+					"sha256": "26e08ab7fe4c70aca35d68ec5391f7af4101a3250ede763064c5d3ff5b387675"
 				}
 			],
             "build-commands": [ "./install.sh"]
 		},
-        "RPackages.json",
         {
             "name": "readstat",
             "sources": [
@@ -161,9 +161,9 @@
                 "-DFLATPAK_USED=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "a4a67e60db09489c2c06bdeda199f96cb1c634fd",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "type": "git",
+                   "commit": "50d046a6705095a8d4218132d6a5a2ca58dc91c5",
+                   "url": "https://github.com/RensDofferhoff/jasp-desktop.git"
                 }
             ],
             "post-install": ["chmod -R u+w ./"]
