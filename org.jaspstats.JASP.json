@@ -12,7 +12,8 @@
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
-        "--device=dri" 
+        "--device=dri" ,
+	"--require-version=1.12.0"
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
