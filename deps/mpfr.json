@@ -1,16 +1,10 @@
 {
-    "name": 		"mpfr",
-    "buildsystem": 	"simple",
-    "build-commands":[
-        "./configure --prefix /app",
-        "make",
-        "make install" 
-    ],
-    "sources":[
+    "name": "mpfr",
+    "sources": [
         {
-            "type": 	"archive",
-            "url": 		"https://static.jasp-stats.org/mpfr-4.2.1.tar.xz",
-            "sha256":   "b87753b3f000922972a0b1be1f4ae500945b33962e14892341358e2f7281f3eb"
+            "type": "archive",
+            "url": "https://static.jasp-stats.org/mpfr-4.2.1.tar.xz",
+            "sha256": "b87753b3f000922972a0b1be1f4ae500945b33962e14892341358e2f7281f3eb"
         }
     ]
 }

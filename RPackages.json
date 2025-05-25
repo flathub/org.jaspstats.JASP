@@ -1,20 +1,23 @@
 {
-	"name": "RPackages2",
-	"buildsystem": "simple",
-	"build-commands": [],
-	"modules":
-	[
-		{
-			"name": "Rpackages",
-			"buildsystem": "simple",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://static.jasp-stats.org/development/cellars/cellar_flatpak_sources_0.19.2.0.tar.gz",
-					"sha256": "285568217c9f865d63bd3f11d5e34124bfa8bc020cc3c5675112353387bc7e2b"
-				}
-			],
-      "build-commands": ["mkdir /app/lib64/cellar", "cp * /app/lib64/cellar", "find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"]
-		}
-	]
+    "name": "RPackages2",
+    "buildsystem": "simple",
+    "build-commands": [],
+    "modules": [
+        {
+            "name": "Rpackages",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://static.jasp-stats.org/development/cellars/cellar_flatpak_sources_0.19.2.0.tar.gz",
+                    "sha256": "285568217c9f865d63bd3f11d5e34124bfa8bc020cc3c5675112353387bc7e2b"
+                }
+            ],
+            "build-commands": [
+                "mkdir /app/lib64/cellar",
+                "cp * /app/lib64/cellar",
+                "find . | grep renv | tail -n 1 | xargs -i cp {} /app/lib64/cellar/renv.tar.gz"
+            ]
+        }
+    ]
 }

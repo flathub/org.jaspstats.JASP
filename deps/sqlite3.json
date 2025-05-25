@@ -1,16 +1,13 @@
 {
-    "name": 		"sqlite3",
-    "buildsystem": 	"simple",
-    "build-commands":[
-        "./configure --prefix /app CFLAGS='-DSQLITE_MAX_COLUMN=32767'",
-        "make",
-        "make install" 
+    "name": "sqlite3",
+    "config-opts": [
+        "CFLAGS='-DSQLITE_MAX_COLUMN=32767'"
     ],
-    "sources":[
+    "sources": [
         {
-            "type": 	"archive",
-            "url": 		"https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz",
-            "sha256":   "6f8e6a7b335273748816f9b3b62bbdc372a889de8782d7f048c653a447417a7d"
+            "type": "archive",
+            "url": "https://www.sqlite.org/2025/sqlite-autoconf-3490200.tar.gz",
+            "sha256": "6527dce15f55cd51af22190c866f28801505ce7faa536893fdc87d9108c1fb1e"
         }
     ]
 }

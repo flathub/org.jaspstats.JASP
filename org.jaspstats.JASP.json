@@ -1,10 +1,10 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.7",
+    "base-version": "6.9",
     "command": "org.jaspstats.JASP",
     "finish-args": [
         "--socket=wayland",
@@ -12,7 +12,7 @@
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
-        "--device=dri" 
+        "--device=dri"
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
@@ -28,7 +28,7 @@
             "CXX14FLAGS": "-std=gnu++14",
             "CXX17FLAGS": "-std=gnu++17",
             "CXX20FLAGS": "-std=gnu++20",
-	    "CFLAGS": "-Wno-error -O2", 
+            "CFLAGS": "-Wno-error -O2",
             "JASP_R_REPOSITORY": "file:///app/lib64/local-cran",
             "GITHUB_PAT_DEF": "Z2hwX0M3YnZhaEJIYjF5QVVxN0p5NmtjTXhpcWRveXIyOTEwOXc4Rwo",
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
@@ -52,7 +52,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.2",
+                    "tag": "v6.9.0",
+                    "commit": "fc6136cd56dff94f1b361daa455c89b1e7a9f5a6",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -68,7 +69,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/boostorg/boost",
-                    "tag": "boost-1.86.0"
+                    "tag": "boost-1.88.0",
+                    "commit": "199ef13d6034c85232431130142159af3adfce22"
                 }
             ]
         },
@@ -89,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
-                    "sha256": "b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.5.0.tar.xz",
+                    "sha256": "101766c3aefffcbacde39c8a0b9c3accf50a563955f66ff2f7b321d6bf07da8d"
                 }
             ]
         },
@@ -101,7 +103,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.12.1",
+                    "commit": "6ec7f2bc4ecf4c4a93496aa2fa519575bc0e39ca",
                     "url": "https://github.com/Reference-LAPACK/lapack"
                 }
             ]
@@ -123,23 +126,26 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v1.8.4",
+                    "tag": "v1.9.0",
+                    "commit": "338e6fb681369ff0537719095e22ce9dc602dbf0",
                     "url": "https://github.com/libgit2/libgit2"
                 }
             ]
         },
         {
-			"name": "v8",
-			"buildsystem": "simple",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
-					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
-				}
-			],
-            "build-commands": [ "./install.sh"]
-		},
+            "name": "v8",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://static.jasp-stats.org/v8-lock.tar.gz",
+                    "sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+                }
+            ],
+            "build-commands": [
+                "./install.sh"
+            ]
+        },
         "RPackages.json",
         {
             "name": "readstat",
@@ -147,6 +153,7 @@
                 {
                     "type": "git",
                     "tag": "v1.1.9",
+                    "commit": "104ba03a8da116eb8c094abc18bc2530b733eda9",
                     "url": "https://github.com/WizardMac/ReadStat"
                 }
             ]
@@ -158,15 +165,19 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"],
+                "-DFLATPAK_USED=ON"
+            ],
             "sources": [
                 {
                     "type": "git",
+                    "tag": "v0.19.3",
                     "commit": "c8710df5442149527b0692cc1367ea5b3c982d04",
                     "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
-            "post-install": ["chmod -R u+w ./"]
+            "post-install": [
+                "chmod -R u+w ./"
+            ]
         }
     ]
 }
