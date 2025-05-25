@@ -7,7 +7,7 @@
         {
             "type": "archive",
             "url": "https://www.sqlite.org/2025/sqlite-autoconf-3490200.tar.gz",
-            "sha256": "6527dce15f55cd51af22190c866f28801505ce7faa536893fdc87d9108c1fb1e"
+            "sha256": "5c6d8697e8a32a1512a9be5ad2b2e7a891241c334f56f8b0fb4fc6051e1652e8"
         }
     ]
 }
