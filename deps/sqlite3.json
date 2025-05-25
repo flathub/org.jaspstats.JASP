@@ -1,0 +1,13 @@
+{
+    "name": "sqlite3",
+    "config-opts": [
+        "CFLAGS='-DSQLITE_MAX_COLUMN=32767'"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://www.sqlite.org/2025/sqlite-autoconf-3490200.tar.gz",
+            "sha256": "5c6d8697e8a32a1512a9be5ad2b2e7a891241c334f56f8b0fb4fc6051e1652e8"
+        }
+    ]
+}
