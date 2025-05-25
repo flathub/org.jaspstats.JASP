@@ -84,7 +84,7 @@
         },
         {
             "name": "LAPACK",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [
                 {
