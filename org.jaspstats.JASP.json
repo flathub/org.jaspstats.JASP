@@ -41,23 +41,9 @@
         "/include"
     ],
     "modules": [
-        "deps/sqlite3.json",
         "deps/freexl.json",
-        "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
-        {
-            "name": "qt5compat",
-            "buildsystem": "cmake",
-            "sources": [
-                {
-                    "type": "git",
-                    "tag": "v6.9.0",
-                    "commit": "fc6136cd56dff94f1b361daa455c89b1e7a9f5a6",
-                    "url": "https://github.com/qt/qt5compat"
-                }
-            ]
-        },
         {
             "name": "boost",
             "buildsystem": "simple",
