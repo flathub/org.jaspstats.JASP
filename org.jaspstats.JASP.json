@@ -163,7 +163,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "50d046a6705095a8d4218132d6a5a2ca58dc91c5",
+                   "commit": "8e59b28f375b649464330d5032ce337e0fee7cff",
                    "url": "https://github.com/RensDofferhoff/jasp-desktop.git"
                 }
             ],
