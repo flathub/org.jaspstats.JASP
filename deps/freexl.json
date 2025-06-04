@@ -9,8 +9,8 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://github.com/jasp-stats/freexl/archive/92f31bba661129948c34b3941dd0bab28511fbb1.tar.gz",
-            "sha256":   "baedf906e47122fc7f53dc77b12b628fd437ff83cc7a73acfbc985c2b9fc9120"
+            "url": 		"https://github.com/jasp-stats/freexl/archive/3c849e2424ac15dc5417970fbb36ca5b9a191983.tar.gz",
+            "sha256":   "8983fe8e7c0807fb916b7c3d385145728b3e161fa2b6e435e6acf92ed6c77f11"
         }
     ]
 }
