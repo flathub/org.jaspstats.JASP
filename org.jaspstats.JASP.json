@@ -42,6 +42,7 @@
         "/include"
     ],
     "modules": [
+	"deps/librdata.json",
         "deps/sqlite3.json",
         "deps/freexl.json",
         "deps/mpfr.json",
@@ -163,7 +164,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "a13999561e77ead8a79055590173714702b959d5",
+                   "commit": "44d0871a0c50a3ce9d042ac666eb293a68c9a6ab",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
