@@ -164,7 +164,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "026e4f481228dac197edc1468641f728c819b1d0",
+                   "commit": "3090c32af25d6823a8da9cd795f48e1ce231f92d",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
