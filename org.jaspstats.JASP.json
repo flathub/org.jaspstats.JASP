@@ -161,7 +161,7 @@
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
                 "-DFLATPAK_USED=ON",
-		"-USOURCE_DATE_EPOCH"
+		"-DSOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)"
 	    ],
             "sources": [
                 {
