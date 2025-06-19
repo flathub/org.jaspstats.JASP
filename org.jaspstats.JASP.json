@@ -35,8 +35,7 @@
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
-            "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": ""
+            "R_HOME": "/app/lib64/R/"
         }
     },
     "cleanup": [
@@ -161,7 +160,9 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"],
+                "-DFLATPAK_USED=ON",
+		"-USOURCE_DATE_EPOCH"
+	    ],
             "sources": [
                 {
                    "type": "git",
