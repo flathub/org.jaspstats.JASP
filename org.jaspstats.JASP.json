@@ -35,7 +35,8 @@
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
-            "R_HOME": "/app/lib64/R/"
+            "R_HOME": "/app/lib64/R/",
+	    "SOURCE_DATE_EPOCH": ""
         }
     },
     "cleanup": [
