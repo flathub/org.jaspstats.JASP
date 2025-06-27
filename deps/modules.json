@@ -5,8 +5,8 @@
     "sources":[
         {
             "type": 			"archive",
-            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-x86_64/Flatpak-x86_64-ModulesDir-latest.tar.xz",
-            "sha256":  			"c13cc2e77bff86db599a00d1ade2f1262c7cb627564aa65d33f0aaef44e882e7",
+            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-x86_64/Flatpak-x86_64-ModulesDir-27-06.tar.xz",
+            "sha256":  			"a7be2cc20ee31e64336685203cc454b14e5773d1841d740bf04969bc4aaf89cb",
 	    "only-arches": 		["x86_64"]
         },
         {
