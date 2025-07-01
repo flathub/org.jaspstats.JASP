@@ -22,8 +22,7 @@ jobs:
 
      - name: Update Manifest with Timestamp
        run: |
-          jq --argjson new_ts ${{ env.CURRENT_TS }} '.["build-options"].env.SOURCE_DATE_EPOCH = $new_ts' org.jaspstats.JASP.json > tmp.json
-          mv tmp.json org.jaspstats.JASP.json
+          sed -i "s/\(\"SOURCE_DATE_EPOCH\": \"\)[0-9]\+\(\"\)/\1${{ env.CURRENT_TS }}\2/" org.jaspstats.JASP.json
 
      - name: Commit Changes
        run: |
