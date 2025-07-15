@@ -25,6 +25,8 @@ jobs:
           sed -i "s/\(\"SOURCE_DATE_EPOCH\": \"\)[0-9]\+\(\"\)/\1${{ env.CURRENT_TS }}\2/" org.jaspstats.JASP.json
 
      - name: Commit Changes
+       env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
