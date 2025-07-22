@@ -6,7 +6,7 @@
         {
             "type": 			"archive",
             "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-x86_64/Flatpak-x86_64-ModulesDir-22-07.tar.xz",
-            "sha256":  			"7c94c7cb623d3dd0d91e854be61da6724d301b4c83863d517444cc5b68d58688",
+            "sha256":  			"a7c12230295a2f6c9947b1f3eec7c8996f6ca44fd4565f0eac318ee2cce1a19c",
 	    "only-arches": 		["x86_64"]
         },
         {
