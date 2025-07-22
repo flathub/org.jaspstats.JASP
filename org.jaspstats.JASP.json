@@ -6,7 +6,7 @@
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.8",
     "command": "org.jaspstats.JASP",
-    "finish-args": [ 
+    "finish-args": [
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc",
@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1751537916"
+	    "SOURCE_DATE_EPOCH": "1753203030"
         }
     },
     "cleanup": [
@@ -166,7 +166,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "9b32eeaba4462b0cf208cfb3274125882646ab36",
+                   "commit": "d2a328cc0cf0b28c032f0c598d58f355d5134821",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
