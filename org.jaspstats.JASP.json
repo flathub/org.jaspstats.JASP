@@ -1,18 +1,19 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.7",
+    "base-version": "6.8",
     "command": "org.jaspstats.JASP",
-    "finish-args": [
+    "finish-args": [ 
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc",
         "--share=network",
         "--filesystem=home",
-        "--device=dri" 
+        "--device=dri" ,
+	"--require-version=1.12.0"
     ],
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
@@ -34,25 +35,28 @@
             "GITHUB_PAT": "Z2hwX1FVQmt2dWk0WFV5SWJrN0VKc2JUWWVnTzFaVnQxbzROWmxwdwo",
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
-            "R_HOME": "/app/lib64/R/"
+            "R_HOME": "/app/lib64/R/",
+	    "SOURCE_DATE_EPOCH": "1753216967"
         }
     },
     "cleanup": [
         "/include"
     ],
     "modules": [
+	"deps/librdata.json",
         "deps/sqlite3.json",
         "deps/freexl.json",
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
+        "deps/modules.json",
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.7.2",
+                    "tag": "v6.8.1",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -89,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cran.r-project.org/src/base/R-4/R-4.4.1.tar.gz",
-                    "sha256": "b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d"
+                    "url": "https://cran.r-project.org/src/base/R-4/R-4.5.1.tar.gz",
+                    "sha256": "b42a7921400386645b10105b91c68728787db5c4c83c9f6c30acdce632e1bb70"
                 }
             ]
         },
@@ -135,12 +139,11 @@
 				{
 					"type": "archive",
 					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
-					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+					"sha256": "26e08ab7fe4c70aca35d68ec5391f7af4101a3250ede763064c5d3ff5b387675"
 				}
 			],
             "build-commands": [ "./install.sh"]
 		},
-        "RPackages.json",
         {
             "name": "readstat",
             "sources": [
@@ -158,12 +161,13 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"],
+                "-DFLATPAK_USED=ON"
+	    ],
             "sources": [
                 {
-                    "type": "git",
-                    "commit": "c8710df5442149527b0692cc1367ea5b3c982d04",
-                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                   "type": "git",
+                   "commit": "d2a328cc0cf0b28c032f0c598d58f355d5134821",
+                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
             "post-install": ["chmod -R u+w ./"]
