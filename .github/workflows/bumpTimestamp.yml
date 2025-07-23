@@ -1,0 +1,33 @@
+name: Auto Bump Timestamp
+
+on: 
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+     - uses: actions/checkout@v4
+       with:
+         ref: ${{ github.event.pull_request.head.ref }}
+     
+     - name: Get Current Timestamp
+       id: timestamp
+       run: |
+           echo "CURRENT_TS=$(date +%s)" >> $GITHUB_ENV
+
+     - name: Update Manifest with Timestamp
+       run: |
+          sed -i "s/\(\"SOURCE_DATE_EPOCH\": \"\)[0-9]\+\(\"\)/\1${{ env.CURRENT_TS }}\2/" org.jaspstats.JASP.json
+
+     - name: Commit Changes
+       run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add org.jaspstats.JASP.json
+          git commit -m "Automatically update SOURCE_DATE_EPOCH to ${{ env.CURRENT_TS }}"
+          git push
