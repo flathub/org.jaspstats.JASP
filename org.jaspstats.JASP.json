@@ -14,7 +14,7 @@
         "--filesystem=home",
         "--device=dri" ,
 	"--require-version=1.12.0"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-O2 -Wno-error",
@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1755788540"
+	    "SOURCE_DATE_EPOCH": "1757338373"
         }
     },
     "cleanup": [
