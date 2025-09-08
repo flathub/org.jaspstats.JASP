@@ -5,7 +5,7 @@
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.8",
-    "command": "/app/exec_shim",
+    "command": "exec_shim",
     "finish-args": [ 
         "--socket=wayland",
         "--socket=fallback-x11",
@@ -54,8 +54,8 @@
             "name": "exec_shim",
             "buildsystem": 	"simple",
 			"build-commands":[
-				"cp exec_shim /app",
-				"chmod +x /app/exec_shim"
+				"cp exec_shim /app/bin/",
+				"chmod +x /app/bin/exec_shim"
 			],
             "sources": [
                 {
