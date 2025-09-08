@@ -5,7 +5,7 @@
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.8",
-    "command": "org.jaspstats.JASP",
+    "command": "exec_shim",
     "finish-args": [ 
         "--socket=wayland",
         "--socket=fallback-x11",
@@ -50,6 +50,20 @@
         "deps/gsl.json",
         "deps/glpk.json",
         "deps/modules.json",
+        {
+            "name": "exec_shim",
+            "buildsystem": 	"simple",
+			"build-commands":[
+				"cp exec_shim /app/bin/",
+				"chmod +x /app/bin/exec_shim"
+			],
+            "sources": [
+                {
+                    "type": "file",
+ 					"path": "exec_shim"
+                }
+            ]
+        },
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
