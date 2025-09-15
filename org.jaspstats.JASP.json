@@ -5,7 +5,7 @@
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.8",
-    "command": "org.jaspstats.JASP",
+    "command": "exec_shim",
     "finish-args": [ 
         "--socket=wayland",
         "--socket=fallback-x11",
@@ -14,7 +14,7 @@
         "--filesystem=home",
         "--device=dri" ,
 	"--require-version=1.12.0"
-    ],
+    ], 
     "build-options": {
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-O2 -Wno-error",
@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1753216967"
+	    "SOURCE_DATE_EPOCH": "1757338373"
         }
     },
     "cleanup": [
@@ -50,6 +50,20 @@
         "deps/gsl.json",
         "deps/glpk.json",
         "deps/modules.json",
+        {
+            "name": "exec_shim",
+            "buildsystem": 	"simple",
+			"build-commands":[
+				"cp exec_shim /app/bin/",
+				"chmod +x /app/bin/exec_shim"
+			],
+            "sources": [
+                {
+                    "type": "file",
+ 					"path": "exec_shim"
+                }
+            ]
+        },
         {
             "name": "qt5compat",
             "buildsystem": "cmake",
@@ -166,7 +180,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "d2a328cc0cf0b28c032f0c598d58f355d5134821",
+                   "commit": "180d14c18d13c107ee7c16b0993ff7e1cc02680b",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],

@@ -1,0 +1,21 @@
+#!/bin/bash
+if ! command -v gdb >/dev/null 2>&1 # we are not running under --devel so lets start JASP as normal
+then
+    /app/bin/org.jaspstats.JASP $@
+    exit 1
+fi
+
+# Start R for development
+export LD_LIBRARY_PATH=/app/lib/x86_64-linux-gnu/:/app/lib/aarch64-linux-gnu/:/app/lib/
+export C_INCLUDE_PATH=/app/include/
+export CPLUS_INCLUDE_PATH=/app/include/
+export PREFIX=/app/
+export PKG_CONFIG_PATH=/app/lib/pkgconfig/
+export DOWNLOAD_STATIC_LIBV8=1
+export R_LIBS=$XDG_CACHE_HOME/../jasp_R_dev_lib/
+unset R_LIBS_USER
+mkdir $R_LIBS
+/app/bin/R $@
+bash
+exit 1
+
