@@ -180,7 +180,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "180d14c18d13c107ee7c16b0993ff7e1cc02680b",
+                   "commit": "c503f0cac01739a507dc583be646041de140f6bf",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
