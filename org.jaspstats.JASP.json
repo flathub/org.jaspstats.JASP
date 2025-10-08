@@ -36,12 +36,9 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1759318226"
+	    "SOURCE_DATE_EPOCH": "1759919509"
         }
     },
-    "cleanup": [
-        "/include"
-    ],
     "modules": [
 	"deps/librdata.json",
         "deps/sqlite3.json",
