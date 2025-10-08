@@ -39,9 +39,6 @@
 	    "SOURCE_DATE_EPOCH": "1759318226"
         }
     },
-    "cleanup": [
-        "/include"
-    ],
     "modules": [
 	"deps/librdata.json",
         "deps/sqlite3.json",
