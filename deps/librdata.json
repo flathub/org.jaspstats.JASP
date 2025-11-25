@@ -2,7 +2,7 @@
     "name": 		"librdata",
     "buildsystem": 	"simple",
     "build-commands":[
-        " autoreconf -i -f -I /usr/share/gettext/m4",
+        " autoreconf -i -f -I /app/share/gettext/m4",
         "./autogen.sh",
         "./configure --prefix /app",
         "make",
