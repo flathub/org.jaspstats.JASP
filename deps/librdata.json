@@ -2,6 +2,7 @@
     "name": 		"librdata",
     "buildsystem": 	"simple",
     "build-commands":[
+        "autoreconf -i -f",
         "./autogen.sh",
         "./configure --prefix /app",
         "make",
