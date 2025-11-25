@@ -1,10 +1,10 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.8",
+    "base-version": "6.10",
     "command": "exec_shim",
     "finish-args": [ 
         "--socket=wayland",
@@ -36,12 +36,9 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1757338373"
+	    "SOURCE_DATE_EPOCH": "1764070373"
         }
     },
-    "cleanup": [
-        "/include"
-    ],
     "modules": [
 	"deps/librdata.json",
         "deps/sqlite3.json",
@@ -70,7 +67,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.8.1",
+                    "tag": "v6.10.0",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -180,7 +177,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "bb3d77ba2c7b0118c81c1d939b2cad512ac7076f",
+                   "commit": "579212a309d0dd324aba3df19e8c51edb8dbc133",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
