@@ -40,7 +40,8 @@
         }
     },
     "modules": [
-	"deps/librdata.json",
+		"deps/gettext.json",
+	    "deps/librdata.json",
         "deps/sqlite3.json",
         "deps/freexl.json",
         "deps/mpfr.json",
