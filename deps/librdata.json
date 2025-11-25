@@ -3,7 +3,6 @@
     "buildsystem": 	"simple",
     "build-commands":[
         " autoreconf -i -f -I /app/share/gettext/m4",
-        "./autogen.sh",
         "./configure --prefix /app",
         "make",
         "make install" 
