@@ -3,7 +3,7 @@
     "buildsystem": 	"simple",
     "build-commands":[
         "autoreconf -vfi",
-        "./configure",
+        "./configure --prefix /app",
         "make",
         "make install" 
     ], 
