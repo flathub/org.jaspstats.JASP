@@ -117,7 +117,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.12.1",
                     "url": "https://github.com/Reference-LAPACK/lapack"
                 }
             ]
