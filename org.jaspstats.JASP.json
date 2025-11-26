@@ -114,6 +114,9 @@
             "name": "LAPACK",
             "buildsystem": "cmake",
             "builddir": true,
+			"config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
             "sources": [
                 {
                     "type": "git",
