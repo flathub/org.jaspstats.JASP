@@ -163,6 +163,12 @@
 		},
         {
             "name": "readstat",
+			"build-commands":[
+		        "autoreconf -vfi",
+		        "./configure --prefix /app",
+		        "make",
+		        "make install" 
+		    ], 
             "sources": [
                 {
                     "type": "git",
