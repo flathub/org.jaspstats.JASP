@@ -164,7 +164,7 @@
         {
             "name": "readstat",
 			"build-commands":[
-		        "autoreconf -vfi -I /app/share/gettext/m4",
+		        "autoreconf -vfi -I /app/share/libiconv/m4",
 		        "./configure --prefix /app",
 		        "make",
 		        "make install" 
