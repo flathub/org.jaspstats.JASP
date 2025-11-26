@@ -115,7 +115,9 @@
             "buildsystem": "cmake",
             "builddir": true,
 			"config-opts": [
-                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+				"-DCMAKE_EXE_LINKER_FLAGS=-Wl,--no-as-needed",
+				"-DCMAKE_SHARED_LINKER_FLAGS=-Wl,--no-as-needed"
             ],
             "sources": [
                 {
