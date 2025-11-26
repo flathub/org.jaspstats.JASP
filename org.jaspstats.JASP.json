@@ -165,7 +165,7 @@
         {
             "name": "readstat",
 			"build-commands":[
-		        "autoreconf -vfi -I /app/share/libiconv/m4",
+		        "autoreconf -vfi",
 		        "./configure --prefix /app",
 		        "make",
 		        "make install" 
@@ -175,6 +175,10 @@
                     "type": "git",
                     "tag": "v1.1.9",
                     "url": "https://github.com/WizardMac/ReadStat"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/readstat-fixConfigure.patch"
                 }
             ]
         },
