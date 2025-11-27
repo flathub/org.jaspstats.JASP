@@ -64,7 +64,7 @@
         },
         {
             "name": "qt5compat",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "git",
