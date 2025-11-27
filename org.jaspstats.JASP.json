@@ -47,7 +47,6 @@
         "deps/mpfr.json",
         "deps/gsl.json",
         "deps/glpk.json",
-		"deps/libiconv.json",
         "deps/modules.json",
         {
             "name": "exec_shim",
