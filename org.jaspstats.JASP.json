@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1760357592"
+	    "SOURCE_DATE_EPOCH": "1765503691"
         }
     },
     "modules": [
