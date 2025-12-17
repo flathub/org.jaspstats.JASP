@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1764225649"
+	    "SOURCE_DATE_EPOCH": "1765955339"
         }
     },
     "modules": [
@@ -68,7 +68,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.10.0",
+                    "tag": "v6.10.1",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
