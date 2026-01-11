@@ -1,10 +1,10 @@
 {
     "app-id": "org.jaspstats.JASP",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.8",
+    "base-version": "6.10",
     "command": "exec_shim",
     "finish-args": [ 
         "--socket=wayland",
@@ -36,14 +36,12 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1765354113"
+	    "SOURCE_DATE_EPOCH": "1765955339"
         }
     },
-    "cleanup": [
-        "/include"
-    ],
     "modules": [
-	"deps/librdata.json",
+		"deps/gettext.json",
+	    "deps/librdata.json",
         "deps/sqlite3.json",
         "deps/freexl.json",
         "deps/mpfr.json",
@@ -66,11 +64,11 @@
         },
         {
             "name": "qt5compat",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v6.8.1",
+                    "tag": "v6.10.1",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -116,10 +114,15 @@
             "name": "LAPACK",
             "buildsystem": "cmake",
             "builddir": true,
+			"config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+				"-DCMAKE_EXE_LINKER_FLAGS=-Wl,--no-as-needed",
+				"-DCMAKE_SHARED_LINKER_FLAGS=-Wl,--no-as-needed"
+            ],
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v3.10.0",
+                    "tag": "v3.12.1",
                     "url": "https://github.com/Reference-LAPACK/lapack"
                 }
             ]
@@ -160,11 +163,21 @@
 		},
         {
             "name": "readstat",
+			"build-commands":[
+		        "autoreconf -vfi",
+		        "./configure --prefix /app",
+		        "make",
+		        "make install" 
+		    ], 
             "sources": [
                 {
                     "type": "git",
                     "tag": "v1.1.9",
                     "url": "https://github.com/WizardMac/ReadStat"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/readstat-fixConfigure.patch"
                 }
             ]
         },
@@ -180,7 +193,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "bb3d77ba2c7b0118c81c1d939b2cad512ac7076f",
+                   "commit": "579212a309d0dd324aba3df19e8c51edb8dbc133",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
