@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1768297308"
+	    "SOURCE_DATE_EPOCH": "1769093639"
         }
     },
     "modules": [
@@ -193,7 +193,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "eed37e3e92a4013a7040ee424e06676df6c418ee",
+                   "commit": "a51c33b3208e0188d215d6ccd6ae00136d164062",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
