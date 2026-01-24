@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1769173775"
+	    "SOURCE_DATE_EPOCH": "1769244552"
         }
     },
     "modules": [
@@ -69,6 +69,7 @@
                 {
                     "type": "git",
                     "tag": "v6.10.1",
+                    "commit": "dbc825317c030701bc454bcb5c332aa13dcdaf94",
                     "url": "https://github.com/qt/qt5compat"
                 }
             ]
@@ -84,7 +85,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/boostorg/boost",
-                    "tag": "boost-1.86.0"
+                    "tag": "boost-1.86.0",
+                    "commit": "65c1319bb92fe7a9a4abd588eff5818d9c2bccf9"
                 }
             ]
         },
@@ -123,6 +125,7 @@
                 {
                     "type": "git",
                     "tag": "v3.12.1",
+                    "commit": "6ec7f2bc4ecf4c4a93496aa2fa519575bc0e39ca",
                     "url": "https://github.com/Reference-LAPACK/lapack"
                 }
             ]
@@ -144,7 +147,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "v1.8.4",
+                    "tag": "v1.8.5",
+                    "commit": "c7e6c72fd773f6813dca3d743cdd54bb3be7de18",
                     "url": "https://github.com/libgit2/libgit2"
                 }
             ]
@@ -173,6 +177,7 @@
                 {
                     "type": "git",
                     "tag": "v1.1.9",
+                    "commit": "104ba03a8da116eb8c094abc18bc2530b733eda9",
                     "url": "https://github.com/WizardMac/ReadStat"
                 },
                 {
