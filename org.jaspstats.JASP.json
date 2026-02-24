@@ -15,7 +15,7 @@
         "--device=dri" ,
 	"--require-version=1.12.0"
     ], 
-    "build-options": {
+    "build-options": { 
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-O2 -Wno-error",
         "ldflags": "-lgfortran",
