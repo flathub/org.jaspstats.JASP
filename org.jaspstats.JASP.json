@@ -6,7 +6,7 @@
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.10",
     "command": "exec_shim",
-    "finish-args": [ 
+    "finish-args": [
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc",
@@ -15,7 +15,7 @@
         "--device=dri" ,
 	"--require-version=1.12.0"
     ], 
-    "build-options": {
+    "build-options": { 
         "cxxflags": "-O2 -g -Wno-error",
         "cflags": "-O2 -Wno-error",
         "ldflags": "-lgfortran",
@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1770743455"
+	    "SOURCE_DATE_EPOCH": "1771925131"
         }
     },
     "modules": [
@@ -198,7 +198,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "4cf656b45ccc9b10255895fe00a8cd673ae89567",
+                   "commit": "62b061009a8a125d448de1699829e33c7b960d05",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
