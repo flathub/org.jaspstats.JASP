@@ -2,7 +2,7 @@
     "name": 		"gplk",
     "buildsystem": 	"simple",
     "build-commands":[
-        "./configure --prefix /app --with-gmp",
+        "./configure --prefix /app --with-gmp CFLAGS='-ansi'",
         "make",
         "make install" 
     ],
