@@ -48,6 +48,7 @@
         "deps/gsl.json",
         "deps/glpk.json",
         "deps/modules.json",
+		"deps/libsodium.json",
         {
             "name": "exec_shim",
             "buildsystem": 	"simple",
