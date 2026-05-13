@@ -1,0 +1,16 @@
+{
+    "name": 		"libsodium",
+    "buildsystem": 	"simple",
+    "build-commands":[
+        "./configure --prefix /app",
+        "make",
+        "make install"
+    ],
+    "sources":[
+        {
+            "type": 	"archive",
+            "url": 		"https://download.libsodium.org/libsodium/releases/libsodium-1.0.22-stable.tar.gz",
+            "sha256":   "ba3e9f0310f546f6877498891e9afc0b6e7973dfae412cfe9f3bca511dbb4087"
+        }
+    ]
+}
