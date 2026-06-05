@@ -36,7 +36,7 @@
             "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
             "PREFIX": "/app",
             "R_HOME": "/app/lib64/R/",
-	    "SOURCE_DATE_EPOCH": "1778681968"
+	    "SOURCE_DATE_EPOCH": "1780641265"
         }
     },
     "modules": [
@@ -60,18 +60,6 @@
                 {
                     "type": "file",
  					"path": "exec_shim"
-                }
-            ]
-        },
-        {
-            "name": "qt5compat",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "git",
-                    "tag": "v6.10.1",
-                    "commit": "dbc825317c030701bc454bcb5c332aa13dcdaf94",
-                    "url": "https://github.com/qt/qt5compat"
                 }
             ]
         },
@@ -199,7 +187,7 @@
             "sources": [
                 {
                    "type": "git",
-                   "commit": "31b00b68b960a6b23d42cdfd112b9fbc1310310a",
+                   "commit": "28be3fee5c7ce2119f1945acd0254eb4fb8cb6e2",
                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ],
