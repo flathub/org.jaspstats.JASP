@@ -5,7 +5,7 @@
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
     "base-version": "6.10", 
-    "command": "exec_shim",
+    "command": "exec_shim", 
     "finish-args": [ 
         "--socket=wayland",
         "--socket=fallback-x11",
