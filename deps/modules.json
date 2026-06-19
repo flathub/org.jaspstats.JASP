@@ -5,14 +5,14 @@
     "sources":[
         {
             "type": 			"archive",
-            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-x86_64/Flatpak-x86_64-ModulesDir-01-03.tar.gz",
-            "sha256":  			"fe08f75f2c6e036aa5a647759d5976dd026937f47328a4b9a028dd470e2d8149",
+            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-x86_64/Flatpak-x86_64-ModulesDir-04-05.tar.xz",
+            "sha256":  			"26ca4801f8fa9bda6cc920c6009af129bb0f33e5d409a096d130bc761f308ce0",
 	    "only-arches": 		["x86_64"]
         },
         {
             "type": 			"archive",
-            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-aarch64/Flatpak-aarch64-ModulesDir-21-08.tar.xz",
-            "sha256":  			"4b7b3b4ded777b7ef54ea1b33cc9d459ca43e2dd688c70efea2199b811df9735",
+            "url": 			"https://repo.jasp-stats.org/bundles/Flatpak-aarch64/Flatpak-aarch64-ModulesDir-08-06.tar.xz",
+            "sha256":  			"298e84e40d534bc92033cd8c3cf06a7402355dcd8f9792363696468cd99d899b",
 	    "only-arches": 		["aarch64"]
         }
     ]
