@@ -197,8 +197,8 @@
       "sources": [
         {
           "type": "git",
-          "commit": "8270ef85002d2958314b8d46a33ef11ae68dc215",
-          "url": "https://github.com/RensDofferhoff/jasp-desktop.git"
+          "commit": "0df8a2ddedd186f08a0ecb20c7d0f88db7674e18",
+          "url": "https://github.com/jasp-stats/jasp-desktop.git"
         }
       ],
       "post-install": ["chmod -R u+w ./"]
