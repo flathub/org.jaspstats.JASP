@@ -10,7 +10,7 @@
         {
             "type": 	"archive",
             "url": 		"https://download.libsodium.org/libsodium/releases/libsodium-1.0.22-stable.tar.gz",
-            "sha256":   "cd32aa42225e60782851d9817a0f3900660692a34068e8768a23223587b5062a"
+            "sha256":   "0e054ab3b2fc00b6c0b76bdbd42d332d7d627c4acd0da2d53dc9041310b34879"
         }
     ]
 }
