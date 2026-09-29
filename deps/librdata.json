@@ -10,8 +10,8 @@
     "sources":[
         {
             "type": 	"archive",
-            "url": 		"https://github.com/WizardMac/librdata/archive/33bd276ecb0bbcd8997ccc71a544149b3da0d940.tar.gz",
-            "sha256":   "fc3e0d655c21d4b5144a0ad73f79a249903b5dde4dc8f7091cd0393d214294a2"
+            "url": 		"https://github.com/WizardMac/librdata/archive/7ae01f6371bb3ab113c522e0f1da99bf6416dbb2.tar.gz",
+            "sha256":   "e97561fc5f17639666c0c44a9287d56e32fd6746e55caa1f6dba3e6750a1c73c"
         }
     ]
 }
