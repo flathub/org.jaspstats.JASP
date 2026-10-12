@@ -14,7 +14,7 @@
     "--filesystem=home",
     "--device=dri",
     "--talk-name=org.freedesktop.secrets",
-    "--require-version=1.12.0"
+    "--require-version=1.12.0" 
   ],
   "build-options": {
     "cxxflags": "-O2 -g -Wno-error",
