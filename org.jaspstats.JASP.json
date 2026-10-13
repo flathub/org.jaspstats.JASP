@@ -13,7 +13,6 @@
     "--share=network",
     "--filesystem=home",
     "--device=dri",
-    "--talk-name=org.freedesktop.secrets",
     "--require-version=1.12.0" 
   ],
   "build-options": {
@@ -37,7 +36,7 @@
       "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
       "PREFIX": "/app",
       "R_HOME": "/app/lib64/R/",
-      "SOURCE_DATE_EPOCH": "1791832043"
+      "SOURCE_DATE_EPOCH": "1791874370"
     }
   },
   "modules": [
