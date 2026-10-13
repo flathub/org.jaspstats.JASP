@@ -13,7 +13,6 @@
     "--share=network",
     "--filesystem=home",
     "--device=dri",
-    "--talk-name=org.freedesktop.secrets",
     "--require-version=1.12.0" 
   ],
   "build-options": {
