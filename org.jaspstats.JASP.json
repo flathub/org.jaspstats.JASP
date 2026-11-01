@@ -180,8 +180,8 @@
         {
           "type": "git",
           "url": "https://invent.kde.org/qt/qt/qthttpserver.git",
-          "tag": "v6.11.1",
-          "commit": "c80d6aa0d09e937ffd1380148f73918d4f9a92b6"
+          "tag": "v6.11.3",
+          "commit": "f64062f5bdf1f25a62140393e8750825c236ca9d"
         }
       ]
     },
