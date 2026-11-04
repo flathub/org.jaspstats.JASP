@@ -36,7 +36,7 @@
       "GIT_DISCOVERY_ACROSS_FILESYSTEM": "true",
       "PREFIX": "/app",
       "R_HOME": "/app/lib64/R/",
-      "SOURCE_DATE_EPOCH": "1793512126"
+      "SOURCE_DATE_EPOCH": "1793752986"
     }
   },
   "modules": [
@@ -169,19 +169,6 @@
         {
           "type": "patch",
           "path": "patches/readstat-fixConfigure.patch"
-        }
-      ]
-    },
-    {
-      "name": "qt6-qthttpserver",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://invent.kde.org/qt/qt/qthttpserver.git",
-          "tag": "v6.11.3",
-          "commit": "f64062f5bdf1f25a62140393e8750825c236ca9d"
         }
       ]
     },
