@@ -173,19 +173,6 @@
       ]
     },
     {
-      "name": "qt6-qthttpserver",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://invent.kde.org/qt/qt/qthttpserver.git",
-          "tag": "v6.11.3",
-          "commit": "f64062f5bdf1f25a62140393e8750825c236ca9d"
-        }
-      ]
-    },
-    {
       "name": "jasp",
       "buildsystem": "cmake-ninja",
       "builddir": true,
